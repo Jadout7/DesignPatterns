@@ -49,7 +49,7 @@ In Pseudo-Code: Create an `PaymentGateway` interface representing the common ope
 payments. Then, implement adapter classes like `PayPalAdapter`, `IDealAdapter`, etc., each adapting the interface of a
 specific payment gateway to the `PaymentGateway` interface.
 
-### Observer Pattern
+### 4. Observer Pattern
 
 The Showroom also takes care of a stock management system for their cars and needs to notify interested parties, such as
 suppliers, whenever there are changes in the stock levels of certain car models. We can implement the Observer pattern
