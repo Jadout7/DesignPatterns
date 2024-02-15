@@ -13,6 +13,7 @@ Online Car Showroom System: Application that enables customers to browse cars, p
 | 1.            | Factory Method | Ability to obtain instances of class objects without needing to know the specific implementation details or subclass types       |
 | 2.            | Decorator      | Allows things to be added to individual objects dynamically, without affecting the behavior of other objects from the same class | 
 | 3.            | Adapter        | Acts as a bridge between two or more incompatible interfaces, allowing them to collaborate without modifying their source code   |
+| 4.            | Observer       | Maintains a list of its dependents, and notifies them of any changes in state, usually by calling one of their methods           |
 
 ## Design Pattern Implementation
 
@@ -34,7 +35,8 @@ under-glow. To accommodate these preferences, the Decorator pattern can be imple
 features of the car based on customer selections.
 
 In Pseudo-Code: Create a `CarFeature` interface representing a feature of the car. Then, create feature implementations
-like `AirFreshener`, `RearCamera`, etc. each adding specific modifications to the base car features. When a customer selects a
+like `AirFreshener`, `RearCamera`, etc. each adding specific modifications to the base car features. When a customer
+selects a
 feature, decorators can be dynamically applied based on their preferences.
 
 ### 3. Adapter Pattern (Preferably Interface):
@@ -47,3 +49,13 @@ In Pseudo-Code: Create an `PaymentGateway` interface representing the common ope
 payments. Then, implement adapter classes like `PayPalAdapter`, `IDealAdapter`, etc., each adapting the interface of a
 specific payment gateway to the `PaymentGateway` interface.
 
+### Observer Pattern
+
+The Showroom also takes care of a stock management system for their cars and needs to notify interested parties, such as
+suppliers, whenever there are changes in the stock levels of certain car models. We can implement the Observer pattern
+to achieve this.
+
+In Pseudo-Code: Create a `CarStockSubject` interface that maintains the stock levels of car models. Then, create classes
+like `CarModelStockManager` that implement this interface and manages the stock levels of different car models. The 
+`CarStockSubject` also maintains a list of observers such as suppliers and notifies them whenever there are changes in 
+the stock levels.

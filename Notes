@@ -1,3 +1,7 @@
-Decorator example for CarShowroom idea:
+1. Change UberEats Idea to Car Showroom
 
-Tesla model 3, a decorator would be adding an air freshener, a rear camera or an under-glow
+2. Decorator example for CarShowroom idea: For a Tesla model 3 as an example, a decorator would be adding an air
+   freshener, a rear camera or an under-glow
+
+3. Add a 4th pattern so that we can fall back on one in-case one of the patterns is not up the the mark
+
