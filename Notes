@@ -1,7 +1,23 @@
+*** Notes subject to change throughout the duration of the course ***
+
 1. Change UberEats Idea to Car Showroom
 
 2. Decorator example for CarShowroom idea: For a Tesla model 3 as an example, a decorator would be adding an air
    freshener, a rear camera or an under-glow
 
-3. Add a 4th pattern so that we can fall back on one in-case one of the patterns is not up the the mark
+MOSCOW ANALYSIS
 
+3. Add a 4th pattern so that we can fall back on one in-case one of the patterns is not up the the mark is a MUST.
+   Observer Pattern to keep track of stock as a 4th pattern
+
+4. Ability to customise your order SHOULD be implemented
+
+5. Way to see number of cars sold COULD be implemented
+
+6. Adding new cars and editing old cars MUST be implemented
+
+7. Purchasing multiple cars is a NO-GO
+
+8. User registration is a NO-GO
+
+9. Deals and Promotions SHOULD be implemented

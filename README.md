@@ -59,3 +59,33 @@ In Pseudo-Code: Create a `CarStockSubject` interface that maintains the stock le
 like `CarModelStockManager` that implement this interface and manages the stock levels of different car models. The 
 `CarStockSubject` also maintains a list of observers such as suppliers and notifies them whenever there are changes in 
 the stock levels.
+
+## MoSCoW Analysis
+ 
+### Must 
+
+| Requirements                                                |
+|-------------------------------------------------------------|
+| Adding a 4th pattern in case we need to fall back on it     |
+| Ability to add and remove new cars to and from the showroom |
+
+### Should 
+
+| Requirements                                                 |
+|--------------------------------------------------------------|
+| Ability to customise your car prior to ordering              |
+| Deals and Promotions for cars and addons at the payment menu |
+
+### Could
+
+| Requirements                                     |
+|--------------------------------------------------|
+| Ability to see number of cars and/or addons sold |
+| Ability to see the summary of the ordered items  |
+
+### Won't 
+
+| Requirements                                        |
+|-----------------------------------------------------|
+| Ability to register and create users                |
+| Ability to purchase multiple cars in a single order |
