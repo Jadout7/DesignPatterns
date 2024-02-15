@@ -4,8 +4,7 @@ _______________________________________________________
 
 ## Application Idea
 
-UberEats / Thuizbezorged / Intercontinental Food Ordering System: Application that enables customers to browse menus,
-place orders, and make payments.
+Online Car Showroom System: Application that enables customers to browse cars, place orders, and make payments.
 
 ## Design Patterns involved
 
@@ -22,25 +21,25 @@ place orders, and make payments.
 The app offers different types of cuisines, each with its own menu. Implementation of the Factory Method pattern for
 generating menu objects based on a selective cuisine.
 
-In Pseudo-Code: Create an abstract class/interface `Menu` representing a menu of food items. Then, create subclasses
-like `ItalianMenu`, `ChineseMenu`, etc., each implementing the `Menu` abstract class/interface and providing their own
-implementations for generating menu items. The `MenuFactory` Class acts as a factory method, responsible for creating
-instances of menu classes based on the customer's selected cuisine.
+In Pseudo-Code: Create an abstract class/interface `CarType` representing a menu of food items. Then, create subclasses
+like `PetrolCarType`, `DieselCarType`, etc., each implementing the `CarType` abstract class/interface and providing
+their own
+implementations for generating car types. The `CarTypeFactory` Class acts as a factory method, responsible for creating
+instances of car type classes based on the customer's selection.
 
 ### 2. Decorator Pattern (Preferably Interface):
 
-Customers may have different dietary preferences(gluten-free, vegetarian, or vegan), so to accommodate these
-preferences, the Decorator pattern can be implemented to dynamically add or modify the behavior of menu items based on
-customer selections.
+Customers may have different preferences for their car, such as adding an air freshener, a rear camera, or an
+under-glow. To accommodate these preferences, the Decorator pattern can be implemented to dynamically modify the
+features of the car based on customer selections.
 
-In Pseudo-Code: Create a `MenuItem` interface representing a food item on the menu. Then, create food implementations
-like `Pizza`, `Chow Mein`, etc. Also, implement decorator classes like `GlutenFreeDecorator`, `VegetarianDecorator`,
-etc., each adding specific dietary modifications to the base menu items. When a customer selects a menu item, decorators
-can be dynamically applied based on their preferences.
+In Pseudo-Code: Create a `CarFeature` interface representing a feature of the car. Then, create feature implementations
+like `AirFreshener`, `RearCamera`, etc. each adding specific modifications to the base car features. When a customer selects a
+feature, decorators can be dynamically applied based on their preferences.
 
 ### 3. Adapter Pattern (Preferably Interface):
 
-Uber/Thuizbezorged/whatever uses multiple gateways to complete trasnactions(IDeal, Paypal, ApplePay). However, each
+The Showroom uses multiple gateways to complete transactions(IDeal, Paypal, ApplePay). However, each
 payment gateway may have a different interface for processing payments. We can implement the Adapter pattern to create
 adapters for different payment gateways so that the customers can use whatever gateway they prefer.
 
