@@ -4,9 +4,10 @@ _______________________________________________________
 
 ## Problem Description
 
-A car showroom aims to enhance its operations through the implementation of various design patterns in its software
-systems. These patterns will address key functionalities such as car type selection, customization, payment gateway
-integration, and inventory management.
+In the buzzing world of automotive retail, efficiency and customer satisfaction are paramount. Our esteemed car
+showroom, renowned for its diverse selection and impeccable service, seeks to elevate its operations with a
+sophisticated management system. This system aims to revolutionize the way we interact with customers, manage inventory,
+process payments, and streamline various aspects of our showroom's day-to-day activities.
 
 // Needs to be rephrased
 
@@ -15,25 +16,24 @@ _______________________________________________________
 ## Design Patterns Involved
 
 | Serial Number | Pattern Type   | Pattern Description                                                                                                              | 
-|---------------|----------------|----------------------------------------------------------------------------------------------------------------------------------|
-| 1.            | Factory Method | Ability to obtain instances of class objects without needing to know the specific implementation details or subclass types       |
-| 2.            | Decorator      | Allows things to be added to individual objects dynamically, without affecting the behavior of other objects from the same class | 
-| 3.            | Adapter        | Acts as a bridge between two or more incompatible interfaces, allowing them to collaborate without modifying their source code   |
-| 4.            | Observer       | Maintains a list of its dependents, and notifies them of any changes in state, usually by calling one of their methods           |
+|:-------------:|----------------|----------------------------------------------------------------------------------------------------------------------------------|
+|      1.       | Factory Method | Ability to obtain instances of class objects without needing to know the specific implementation details or subclass types       |
+|      2.       | Decorator      | Allows things to be added to individual objects dynamically, without affecting the behavior of other objects from the same class | 
+|      3.       | Adapter        | Acts as a bridge between two or more incompatible interfaces, allowing them to collaborate without modifying their source code   |
+|      4.       | Observer       | Maintains a list of its dependents, and notifies them of any changes in state, usually by calling one of their methods           |
 
 ## Design Pattern Implementation
 
 ### 1. Factory Method Pattern:
 
 The app offers different types of cars, each with its own engine types. Implementation of the Factory Method pattern for
-generating menu objects based on a selective cuisine.
+generating car type objects is based on the customer's selective preference.
 
 In Pseudo-Code: Create an abstract class/interface `CarType` representing the type of engine the car runs on. Then,
 create subclasses
 like `PetrolCarType`, `DieselCarType`, etc., each implementing the `CarType` abstract class/interface and providing
 their own implementations for generating car types. The `CarTypeFactory` Class acts as a factory method, responsible for
-creating
-instances of car type classes based on the customer's selection.
+creating instances of car type classes based on the customer's selection.
 
 ### 2. Decorator Pattern:
 
@@ -71,16 +71,16 @@ _______________________________________________________
 
 ## MoSCoW Analysis
 
-| Requirement                                                       | Must have | Should have | Could have | Won't have |
-|-------------------------------------------------------------------|:---------:|:-----------:|:----------:|:----------:|
-| Adding a 4th pattern in case we need to fall back on it           |     ✅     |             |            |            |  
-| Ability to add and remove new cars to and from the showroom       |     ✅     |             |            |            |
-| Ability to customise your car prior to placing an order           |           |      ✅      |            |            |
-| Deals and promotions for cars and addons at the payment interface |           |      ✅      |            |            |
-| Ability to see what inventory was sold                            |           |             |     ✅      |            |
-| Ability to see the summary of the ordered items                   |           |             |     ✅      |            |
-| Ability to register and create users                              |           |             |            |     ✅      |
-| Ability to purchase multiple cars in a single order               |           |             |            |     ✅      |
+| Serial Number | Requirement                                                       | Must have | Should have | Could have | Won't have |
+|:-------------:|-------------------------------------------------------------------|:---------:|:-----------:|:----------:|:----------:|
+|       1       | Adding a 4th pattern in case we need to fall back on it           |     ✅     |             |            |            |  
+|       2       | Ability to add and remove new cars to and from the showroom       |     ✅     |             |            |            |
+|       3       | Ability to customise your car prior to placing an order           |           |      ✅      |            |            |
+|       4       | Deals and promotions for cars and addons at the payment interface |           |      ✅      |            |            |
+|       5       | Ability to see what inventory was sold                            |           |             |     ✅      |            |
+|       6       | Ability to see the summary of the ordered items                   |           |             |     ✅      |            |
+|       7       | Ability to register and create users                              |           |             |            |     ✅      |
+|       8       | Ability to purchase multiple cars in a single order               |           |             |            |     ✅      |
 
 _______________________________________________________
 
