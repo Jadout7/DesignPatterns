@@ -7,17 +7,16 @@
 
 MOSCOW ANALYSIS
 
-3. Add a 4th pattern so that we can fall back on one in-case one of the patterns is not up the the mark is a MUST.
-   Observer Pattern to keep track of stock as a 4th pattern
+1. Add a 4th pattern so that we can fall back on one is a MUST.
 
-4. Ability to customise your order SHOULD be implemented
+2. Ability to customise your order SHOULD be implemented
 
-5. Way to see number of cars sold COULD be implemented
+3. Way to see number of cars sold COULD be implemented
 
-6. Adding new cars and editing old cars MUST be implemented
+4. Adding new cars and editing old cars MUST be implemented
 
-7. Purchasing multiple cars is a NO-GO
+5. Purchasing multiple cars is a NO-GO
 
-8. User registration is a NO-GO
+6. User registration is a NO-GO
 
-9. Deals and Promotions SHOULD be implemented
+7. Deals and Promotions SHOULD be implemented

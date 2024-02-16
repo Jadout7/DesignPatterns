@@ -2,11 +2,17 @@
 
 _______________________________________________________
 
-## Application Idea
+## Problem Description
 
-Online Car Showroom System: Application that enables customers to browse cars, place orders, and make payments.
+A car showroom aims to enhance its operations through the implementation of various design patterns in its software
+systems. These patterns will address key functionalities such as car type selection, customization, payment gateway
+integration, and inventory management.
 
-## Design Patterns involved
+// Needs to be rephrased
+
+_______________________________________________________
+
+## Design Patterns Involved
 
 | Serial Number | Pattern Type   | Pattern Description                                                                                                              | 
 |---------------|----------------|----------------------------------------------------------------------------------------------------------------------------------|
@@ -17,18 +23,19 @@ Online Car Showroom System: Application that enables customers to browse cars, p
 
 ## Design Pattern Implementation
 
-### 1. Factory Method Pattern (Can be either Abstract Class or Interface):
+### 1. Factory Method Pattern:
 
-The app offers different types of cuisines, each with its own menu. Implementation of the Factory Method pattern for
+The app offers different types of cars, each with its own engine types. Implementation of the Factory Method pattern for
 generating menu objects based on a selective cuisine.
 
-In Pseudo-Code: Create an abstract class/interface `CarType` representing a menu of food items. Then, create subclasses
+In Pseudo-Code: Create an abstract class/interface `CarType` representing the type of engine the car runs on. Then,
+create subclasses
 like `PetrolCarType`, `DieselCarType`, etc., each implementing the `CarType` abstract class/interface and providing
-their own
-implementations for generating car types. The `CarTypeFactory` Class acts as a factory method, responsible for creating
+their own implementations for generating car types. The `CarTypeFactory` Class acts as a factory method, responsible for
+creating
 instances of car type classes based on the customer's selection.
 
-### 2. Decorator Pattern (Preferably Interface):
+### 2. Decorator Pattern:
 
 Customers may have different preferences for their car, such as adding an air freshener, a rear camera, or an
 under-glow. To accommodate these preferences, the Decorator pattern can be implemented to dynamically modify the
@@ -39,7 +46,7 @@ like `AirFreshener`, `RearCamera`, etc. each adding specific modifications to th
 selects a
 feature, decorators can be dynamically applied based on their preferences.
 
-### 3. Adapter Pattern (Preferably Interface):
+### 3. Adapter Pattern:
 
 The Showroom uses multiple gateways to complete transactions(IDeal, Paypal, ApplePay). However, each
 payment gateway may have a different interface for processing payments. We can implement the Adapter pattern to create
@@ -49,43 +56,34 @@ In Pseudo-Code: Create an `PaymentGateway` interface representing the common ope
 payments. Then, implement adapter classes like `PayPalAdapter`, `IDealAdapter`, etc., each adapting the interface of a
 specific payment gateway to the `PaymentGateway` interface.
 
-### 4. Observer Pattern
+### 4. Observer Pattern:
 
 The Showroom also takes care of a stock management system for their cars and needs to notify interested parties, such as
 suppliers, whenever there are changes in the stock levels of certain car models. We can implement the Observer pattern
 to achieve this.
 
 In Pseudo-Code: Create a `CarStockSubject` interface that maintains the stock levels of car models. Then, create classes
-like `CarModelStockManager` that implement this interface and manages the stock levels of different car models. The 
-`CarStockSubject` also maintains a list of observers such as suppliers and notifies them whenever there are changes in 
+like `CarModelStockManager` that implement this interface and manages the stock levels of different car models. The
+`CarStockSubject` also maintains a list of observers such as suppliers and notifies them whenever there are changes in
 the stock levels.
 
+_______________________________________________________
+
 ## MoSCoW Analysis
- 
-### Must 
 
-| Requirements                                                |
-|-------------------------------------------------------------|
-| Adding a 4th pattern in case we need to fall back on it     |
-| Ability to add and remove new cars to and from the showroom |
+| Requirement                                                       | Must have | Should have | Could have | Won't have |
+|-------------------------------------------------------------------|:---------:|:-----------:|:----------:|:----------:|
+| Adding a 4th pattern in case we need to fall back on it           |     ✅     |             |            |            |  
+| Ability to add and remove new cars to and from the showroom       |     ✅     |             |            |            |
+| Ability to customise your car prior to placing an order           |           |      ✅      |            |            |
+| Deals and promotions for cars and addons at the payment interface |           |      ✅      |            |            |
+| Ability to see what inventory was sold                            |           |             |     ✅      |            |
+| Ability to see the summary of the ordered items                   |           |             |     ✅      |            |
+| Ability to register and create users                              |           |             |            |     ✅      |
+| Ability to purchase multiple cars in a single order               |           |             |            |     ✅      |
 
-### Should 
+_______________________________________________________
 
-| Requirements                                                 |
-|--------------------------------------------------------------|
-| Ability to customise your car prior to ordering              |
-| Deals and Promotions for cars and addons at the payment menu |
+## Class Diagram
 
-### Could
-
-| Requirements                                     |
-|--------------------------------------------------|
-| Ability to see number of cars and/or addons sold |
-| Ability to see the summary of the ordered items  |
-
-### Won't 
-
-| Requirements                                        |
-|-----------------------------------------------------|
-| Ability to register and create users                |
-| Ability to purchase multiple cars in a single order |
+// Create class diagram after approval of PD from Gerjan
