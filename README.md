@@ -11,6 +11,12 @@ process payments, and streamline various aspects of our showroom's day-to-day ac
 
 // Needs to be rephrased
 
+--- 
+In 2024 the automotive world has a wide variety of vehicles whether they are diesel, petrol or if your environmentally conscious electric.
+Our car showroom has everything you want on offer. Whether it's a daily driver or your dream mobile. Our showroom allows you endless customisation
+where you let your wishes be our command. We offer a way of getting the car you want and how you want it directly to you. The best part?, your in control
+the whole time!
+
 _______________________________________________________
 
 ## Design Patterns Involved
