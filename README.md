@@ -73,7 +73,7 @@ _______________________________________________________
 
 | Serial Number | Requirement                                                       | Must have | Should have | Could have | Won't have |
 |:-------------:|-------------------------------------------------------------------|:---------:|:-----------:|:----------:|:----------:|
-|       1       | Adding a 4th pattern in case we need to fall back on it           |     ✅     |             |            |            |  
+|       1       | Adding a 4th pattern in case we need to fall back on it           |          |             |       ✅     |            |  
 |       2       | Ability to add and remove new cars to and from the showroom       |     ✅     |             |            |            |
 |       3       | Ability to customise your car prior to placing an order           |           |      ✅      |            |            |
 |       4       | Deals and promotions for cars and addons at the payment interface |           |      ✅      |            |            |
