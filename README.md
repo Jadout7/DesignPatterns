@@ -35,7 +35,7 @@ _______________________________________________________
 The app offers different types of cars, each with its own engine types. Implementation of the Factory Method pattern for
 generating car type objects is based on the customer's selective preference.
 
-In Pseudo-Code: Create an abstract class/interface `CarType` representing the type of engine the car runs on. Then,
+In Pseudo-Code: Create an abstract class `CarType` representing the type of engine the car runs on. Then,
 create subclasses
 like `PetrolCarType`, `DieselCarType`, etc., each implementing the `CarType` abstract class/interface and providing
 their own implementations for generating car types. The `CarTypeFactory` Class acts as a factory method, responsible for
@@ -47,7 +47,7 @@ Customers may have different preferences for their car, such as adding an air fr
 under-glow. To accommodate these preferences, the Decorator pattern can be implemented to dynamically modify the
 features of the car based on customer selections.
 
-In Pseudo-Code: Create a `CarFeature` interface representing a feature of the car. Then, create feature implementations
+In Pseudo-Code: Create a `CarFeature` abstract class representing a feature of the car. Then, create feature implementations
 like `AirFreshener`, `RearCamera`, etc. each adding specific modifications to the base car features. When a customer
 selects a
 feature, decorators can be dynamically applied based on their preferences.
@@ -68,9 +68,9 @@ The Showroom also takes care of a stock management system for their cars and nee
 suppliers, whenever there are changes in the stock levels of certain car models. We can implement the Observer pattern
 to achieve this.
 
-In Pseudo-Code: Create a `CarStockSubject` interface that maintains the stock levels of car models. Then, create classes
+In Pseudo-Code: Create a `CarStockObserver` interface that maintains the stock levels of car models. Then, create classes
 like `CarModelStockManager` that implement this interface and manages the stock levels of different car models. The
-`CarStockSubject` also maintains a list of observers such as suppliers and notifies them whenever there are changes in
+`CarStockObserver` also maintains a list of observers such as suppliers and notifies them whenever there are changes in
 the stock levels.
 
 _______________________________________________________
@@ -79,10 +79,10 @@ _______________________________________________________
 
 | Serial Number | Requirement                                                       | Must have | Should have | Could have | Won't have |
 |:-------------:|-------------------------------------------------------------------|:---------:|:-----------:|:----------:|:----------:|
-|       1       | Adding a 4th pattern in case we need to fall back on it           |          |             |       ✅     |            |  
-|       2       | Ability to add and remove new cars to and from the showroom       |     ✅     |             |            |            |
-|       3       | Ability to customise your car prior to placing an order           |           |      ✅      |            |            |
-|       4       | Deals and promotions for cars and addons at the payment interface |           |      ✅      |            |            |
+|       1       | Ability to add and remove new cars to and from the showroom       |     ✅     |             |            |            |
+|       2       | Ability to customise your car prior to placing an order           |           |      ✅      |            |            |
+|       3       | Deals and promotions for cars and addons at the payment interface |           |      ✅      |            |            |
+|       4       | Adding a 4th pattern in case we need to fall back on it           |           |             |     ✅      |            |  
 |       5       | Ability to see what inventory was sold                            |           |             |     ✅      |            |
 |       6       | Ability to see the summary of the ordered items                   |           |             |     ✅      |            |
 |       7       | Ability to register and create users                              |           |             |            |     ✅      |
