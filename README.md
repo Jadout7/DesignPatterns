@@ -92,4 +92,4 @@ _______________________________________________________
 
 ## Class Diagram
 
-// Create class diagram after approval of PD from Gerjan
+![Car Showroom Class Diagram](CarShowroomClassDiagram.png)
