@@ -1,6 +1,0 @@
-1. Arraylist: Ask Gerjan if we need unique car instances(Use hashmap or not instead of Arraylists)
-
-2. Unsure about how observer works in a class diagram, same for IIDeal and IPayPal
-
-3. Should carFeature decorator Class contain an instance of the car and would the createFeature() require a car object
-
