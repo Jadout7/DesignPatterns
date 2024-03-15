@@ -13,4 +13,10 @@ public class PetrolCar extends Car {
     public void setFuelType(String fuelType) {
         this.fuelType = fuelType;
     }
+
+    @Override
+    public float calculateTax() {
+        // Implement tax calculation for petrol cars
+        return 0;
+    }
 }

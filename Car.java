@@ -1,49 +1,65 @@
 public abstract class Car {
-    private long VIN;
+    private long vin;
     private String brand;
     private String model;
     private int yearMade;
     private float price;
 
-    public Car(long VIN, String brand, String model, int yearMade, float price) {
-        this.VIN = VIN;
+    public Car(long vin, String brand, String model, int yearMade, float price) {
+        this.vin = vin;
         this.brand = brand;
         this.model = model;
         this.yearMade = yearMade;
         this.price = price;
     }
 
-    public long getVIN() {
-        return VIN;
+    public long getVin() {
+        return vin;
+    }
+
+    public void setVin(long vin) {
+        this.vin = vin;
     }
 
     public String getBrand() {
         return brand;
     }
 
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
     public String getModel() {
         return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
     }
 
     public int getYearMade() {
         return yearMade;
     }
 
+    public void setYearMade(int yearMade) {
+        this.yearMade = yearMade;
+    }
+
     public float getPrice() {
         return price;
     }
 
-    public double calculateTax() {
+    public void setPrice(float price) {
+        this.price = price;
+    }
+
+    public float calculateTax()
+    {
         // Calculation logic for tax
-        double tax = 0;
-        return tax;
+        return 0;
     }
 
-    public void addFeature(FeatureWrapper feature) {
-        // Addition logic for feature
-    }
-
-    public void removeFeature(FeatureWrapper feature) {
-        // Removal logic for feature
+    public float getPriceWithTax() {
+        return getPrice() + calculateTax();
     }
 }

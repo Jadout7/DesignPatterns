@@ -13,4 +13,10 @@ public class HydrogenCar extends Car {
     public void setHydrogenTankPercentage(int hydrogenTankPercentage) {
         this.hydrogenTankPercentage = hydrogenTankPercentage;
     }
+
+    @Override
+    public float calculateTax() {
+        // Implement tax calculation for hydrogen cars
+        return 0;
+    }
 }
