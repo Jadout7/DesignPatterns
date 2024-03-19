@@ -1,4 +1,4 @@
-public abstract class FeatureWrapper {
+public abstract class FeatureWrapper { // Abstract? Interface?
     private Car car;
     private double price;
     private double taxAmount;
