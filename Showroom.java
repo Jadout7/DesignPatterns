@@ -9,10 +9,7 @@ public class Showroom {
         this.soldCars = soldCars;
     }
 
-    //TODO: This method to place order
-
-
-    // public void placeOrder(Order order)
+    //TODO: method to place order
 
     //TODO: purchasing multiple cars method
 
