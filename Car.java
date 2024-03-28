@@ -1,9 +1,12 @@
+import java.util.ArrayList;
+
 public abstract class Car {
     private long vin;
     private String brand;
     private String model;
     private int yearMade;
     private float price;
+    private ArrayList<FeatureWrapper> featureWrappers;
 
     public Car(long vin, String brand, String model, int yearMade, float price) {
         this.vin = vin;
@@ -57,6 +60,15 @@ public abstract class Car {
     {
         // Calculation logic for tax
         return 0;
+    }
+
+    public void addFeature(FeatureWrapper feature) {
+        featureWrappers.add(feature);
+        feature.car = this;
+    }
+
+    public void removeFeature(FeatureWrapper feature){
+        featureWrappers.remove(feature);
     }
 
     public float getPriceWithTax() {

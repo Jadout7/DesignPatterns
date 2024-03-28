@@ -14,6 +14,8 @@ public class ElectricCar extends Car {
         this.batteryPercentage = batteryPercentage;
     }
 
+    //TODO: Add featureWrappers
+
     @Override
     public float calculateTax() {
         // Implement tax calculation for electric cars

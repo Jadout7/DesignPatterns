@@ -14,6 +14,8 @@ public class PetrolCar extends Car {
         this.fuelPercentage = fuelPercentage;
     }
 
+    //TODO: Add featureWrappers
+
     @Override
     public float calculateTax() {
         // Implement tax calculation for petrol cars

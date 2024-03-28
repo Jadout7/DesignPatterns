@@ -1,11 +1,10 @@
 public class HydrogenCar extends Car {
     private double hydrogenTankPercentage;
 
-    public HydrogenCar(long VIN, String brand, String model, int yearMade, float price) {
-        super(VIN, brand, model, yearMade, price);
+    public HydrogenCar(long vin, String brand, String model, int yearMade, float price) {
+        super(vin, brand, model, yearMade, price);
         this.hydrogenTankPercentage = 100.0;
     }
-
     public double getHydrogenTankPercentage() {
         return hydrogenTankPercentage;
     }
@@ -14,6 +13,7 @@ public class HydrogenCar extends Car {
         this.hydrogenTankPercentage = hydrogenTankPercentage;
     }
 
+    //TODO: Add featureWrappers
 
     @Override
     public float calculateTax() {

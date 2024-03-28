@@ -1,5 +1,5 @@
 public abstract class FeatureWrapper { // Abstract? Interface?
-    private Car car;
+    public Car car;
     private double price;
     private double taxAmount;
 
@@ -31,13 +31,5 @@ public abstract class FeatureWrapper { // Abstract? Interface?
 
     public void setTaxAmount(double taxAmount) {
         this.taxAmount = taxAmount;
-    }
-
-    public void applyFeature(Car car) {
-        // Applies feature to the car
-    }
-
-    public void removeFeature(Car car) {
-        // Remove feature from the car
     }
 }
