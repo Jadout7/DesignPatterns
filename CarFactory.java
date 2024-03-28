@@ -9,8 +9,9 @@ public class CarFactory {
         if(carType instanceof ElectricCar){
             return new ElectricCar(carType.getVin(),carType.getBrand(),carType.getModel(), carType.getYearMade(), carType.getPrice());
         } else if (carType instanceof PetrolCar) {
-            //I apologise for the typecast but it *should work*
-            return new PetrolCar(carType.getVin(),carType.getBrand(),carType.getModel(), carType.getYearMade(), carType.getPrice(), ((PetrolCar) carType).getFuelType());
+            //TODO: adjust the typecast
+            // I apologise for the typecast but it *should work*
+            return new PetrolCar(carType.getVin(),carType.getBrand(),carType.getModel(), carType.getYearMade(), carType.getPrice());
         } else if (carType instanceof HydrogenCar){
             return new HydrogenCar(carType.getVin(),carType.getBrand(),carType.getModel(), carType.getYearMade(), carType.getPrice());
         } else return null;

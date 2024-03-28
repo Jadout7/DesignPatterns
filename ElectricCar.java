@@ -1,16 +1,16 @@
 public class ElectricCar extends Car {
-    private int batteryPercentage;
+    private double batteryPercentage;
 
     public ElectricCar(long vin, String brand, String model, int yearMade, float price) {
         super(vin, brand, model, yearMade, price);
-        this.batteryPercentage = 100;
+        this.batteryPercentage = 100.0;
     }
 
-    public int getBatteryPercentage() {
+    public double getBatteryPercentage() {
         return batteryPercentage;
     }
 
-    public void setBatteryPercentage(int batteryPercentage) {
+    public void setBatteryPercentage(double batteryPercentage) {
         this.batteryPercentage = batteryPercentage;
     }
 

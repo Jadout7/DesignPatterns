@@ -1,16 +1,16 @@
 public class HydrogenCar extends Car {
-    private int hydrogenTankPercentage;
+    private double hydrogenTankPercentage;
 
     public HydrogenCar(long VIN, String brand, String model, int yearMade, float price) {
         super(VIN, brand, model, yearMade, price);
-        this.hydrogenTankPercentage = 100;
+        this.hydrogenTankPercentage = 100.0;
     }
 
-    public int getHydrogenTankPercentage() {
+    public double getHydrogenTankPercentage() {
         return hydrogenTankPercentage;
     }
 
-    public void setHydrogenTankPercentage(int hydrogenTankPercentage) {
+    public void setHydrogenTankPercentage(double hydrogenTankPercentage) {
         this.hydrogenTankPercentage = hydrogenTankPercentage;
     }
 
