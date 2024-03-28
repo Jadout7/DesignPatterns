@@ -27,7 +27,29 @@ public class IDeal {
         this.accountHolderName = accountHolderName;
     }
 
-    public void compareDetails(){
+    public boolean isValidIban(){
+        if (iban.length() < 5 && iban.length() > 32){
+            return false;
+        }
+        if (!iban.matches("^[A-Z]{2}[0-9]{2}")) {
+            return false;
+        }
+        if (!iban.substring(4).matches("^[A-Z0-9]+$")){
+            return false;
+        }
+        return true;
+    }
+    public boolean isValidBank() {
+        if (!bankName.matches("^[a-zA-Z]+$")){
+            return false;
+        }
+        return true;
+    }
 
+    public boolean isValidAccountName() {
+        if (!accountHolderName.matches("^[a-zA-Z]+$")){
+            return false;
+        }
+        return true;
     }
 }
