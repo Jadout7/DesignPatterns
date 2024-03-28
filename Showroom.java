@@ -11,8 +11,6 @@ public class Showroom {
 
     //TODO: method to place order
 
-    //TODO: purchasing multiple cars method
-
     public ArrayList<Car> getCars() {
         return cars;
     }
