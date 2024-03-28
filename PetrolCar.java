@@ -1,17 +1,17 @@
 public class PetrolCar extends Car {
-    private String fuelType;
+    private double fuelPercentage;
 
-    public PetrolCar(long VIN, String brand, String model, int yearMade, float price, String fuelType) {
+    public PetrolCar(long VIN, String brand, String model, int yearMade, float price) {
         super(VIN, brand, model, yearMade, price);
-        this.fuelType = fuelType;
+        this.fuelPercentage = 100.0;
     }
 
-    public String getFuelType() {
-        return fuelType;
+    public double getFuelPercentage() {
+        return fuelPercentage;
     }
 
-    public void setFuelType(String fuelType) {
-        this.fuelType = fuelType;
+    public void setFuelPercentage(double fuelPercentage) {
+        this.fuelPercentage = fuelPercentage;
     }
 
     @Override
