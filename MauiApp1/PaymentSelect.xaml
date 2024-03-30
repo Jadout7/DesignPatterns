@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.PaymentSelect"
+             Title="PaymentSelect"
+             Padding="20">
+    <ContentPage.Content>
+        <StackLayout Margin="20" HorizontalOptions="Center" Spacing="20">
+            <Label Text="Payment Details" FontSize="Title"/>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Credit Card" WidthRequest="200" Clicked="CreditCardButton" x:Name="CreditCard"  BackgroundColor="#FF5959"/>
+                <Button Text="Ideal" WidthRequest="200" Clicked="IdealButton" x:Name="Ideal" BackgroundColor="#ADDFFF"/>
+            </StackLayout>
+            <Entry Placeholder="Cardholder name" x:Name="CardHolderName"/>
+            <Entry Placeholder="Card number" x:Name="CardNumber"/>
+            <StackLayout Orientation="Horizontal" >
+                <Entry Placeholder="MM/YY" x:Name="ExpirationDate"/>
+                <Entry Placeholder="CVC" x:Name="CVC"/>
+            </StackLayout>
+            <Entry Placeholder="IBAN" IsVisible="False" x:Name="Iban"/>
+            <Entry Placeholder="Account name"  IsVisible="False" x:Name="AccountName"/>
+            <Entry Placeholder="Account number"  IsVisible="False" x:Name="AccountNumber"/>
+            <Line X1="0" Y1="0" X2="400" Y2="0" Stroke="Black" StrokeThickness="2" />
+
+            <Button Text="Pay" Clicked="Button_Clicked" x:Name="Pay"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
