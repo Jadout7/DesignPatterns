@@ -16,7 +16,6 @@ class Order
 
     public float GetTotalPrice()
     {
-        // Calculate and return the total price of the items in the order (for each loop)
         float totalPrice = 0;
         foreach (Car car in cars)
         {
