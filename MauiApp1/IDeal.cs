@@ -7,6 +7,13 @@ public class IDeal
     private string bankName;
     private string accountHolderName;
 
+    public IDeal(string iban, string bankName, string accountHolderName)
+    {
+        this.iban = iban;
+        this.bankName = bankName;
+        this.accountHolderName = accountHolderName;
+    }
+
     public string GetIban()
     {
         return iban;
@@ -43,11 +50,7 @@ public class IDeal
         {
             return false;
         }
-        if (!iban.StartsWith("^[A-Z]{2}[0-9]{2}$"))
-        {
-            return false;
-        }
-        if (!Regex.IsMatch(iban.Substring(4), "^[A-Z0-9]+$"))
+        if (iban.StartsWith("^[A-Z]{2}[0-9]{2}[A-Z0-9]{9,34}$"))
         {
             return false;
         }
@@ -56,19 +59,13 @@ public class IDeal
 
     public bool IsValidBank()
     {
-        if (!Regex.IsMatch(bankName, "^[a-zA-Z]+$"))
-        {
-            return false;
-        }
-        return true;
+        string textRegex = "^\\p{L}+(?:[- ]\\p{L}+)*$";
+        return Regex.IsMatch(bankName, textRegex);
     }
 
     public bool IsValidAccountName()
     {
-        if (!Regex.IsMatch(accountHolderName, "^[a-zA-Z]+$"))
-        {
-            return false;
-        }
-        return true;
+        string textRegex = "^\\p{L}+(?:[- ]\\p{L}+)*$";
+        return Regex.IsMatch(accountHolderName, textRegex);
     }
 }

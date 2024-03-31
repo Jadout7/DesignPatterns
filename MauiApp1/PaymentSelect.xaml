@@ -8,20 +8,25 @@
         <StackLayout Margin="20" HorizontalOptions="Center" Spacing="20">
             <Label Text="Payment Details" FontSize="Title"/>
             <StackLayout Orientation="Horizontal">
-                <Button Text="Credit Card" WidthRequest="200" Clicked="CreditCardButton" x:Name="CreditCard"  BackgroundColor="#FF5959"/>
-                <Button Text="Ideal" WidthRequest="200" Clicked="IdealButton" x:Name="Ideal" BackgroundColor="#ADDFFF"/>
+                <Button Text="Credit Card" WidthRequest="200" Clicked="CreditCardButton" x:Name="CreditCard"  BackgroundColor="#FF5959" Margin="10,0,10,20"/>
+                <Button Text="Ideal" WidthRequest="200" Clicked="IdealButton" x:Name="Ideal" BackgroundColor="#ADDFFF"  Margin="10,0,10,20"/>
             </StackLayout>
             <Entry Placeholder="Cardholder name" x:Name="CardHolderName"/>
-            <Entry Placeholder="Card number" x:Name="CardNumber"/>
-            <StackLayout Orientation="Horizontal" >
-                <Entry Placeholder="MM/YY" x:Name="ExpirationDate"/>
-                <Entry Placeholder="CVC" x:Name="CVC"/>
+            <Entry Placeholder="Card number" x:Name="CardNumber" TextChanged="CardNumber_TextChanged"/>
+            <StackLayout Orientation="Horizontal" x:Name="CardInformation">
+                <Entry Placeholder="MM/YYYY" x:Name="ExpirationDate" WidthRequest="80" TextChanged="ExpirationDate_TextChanged"/>
+                <Entry Placeholder="CVC" x:Name="CVC" WidthRequest="60" TextChanged="CVC_TextChanged"/>
             </StackLayout>
+            <Picker Title="Select a Bank" x:Name="IdealBank" IsVisible="False">
+                <Picker.Items>
+                    <x:String>ABN</x:String>
+                    <x:String>Revolut</x:String>
+                    <x:String>ING</x:String>
+                </Picker.Items>
+            </Picker>
             <Entry Placeholder="IBAN" IsVisible="False" x:Name="Iban"/>
-            <Entry Placeholder="Account name"  IsVisible="False" x:Name="AccountName"/>
-            <Entry Placeholder="Account number"  IsVisible="False" x:Name="AccountNumber"/>
-            <Line X1="0" Y1="0" X2="400" Y2="0" Stroke="Black" StrokeThickness="2" />
-
+            <Entry Placeholder="Account holder name"  IsVisible="False" x:Name="AccountHolderName"/>
+            <Line X1="0" Y1="0" X2=" 400" Y2="0" Stroke="Black" StrokeThickness="2" HorizontalOptions="Center"/>
             <Button Text="Pay" Clicked="Button_Clicked" x:Name="Pay"/>
         </StackLayout>
     </ContentPage.Content>

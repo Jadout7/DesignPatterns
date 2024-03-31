@@ -18,7 +18,7 @@ public class CreditCard : IPayable
 
     public bool ProcessPayment()
     {
-        return IsValidCVC() && IsValidCardHolder() && IsValidCardNumber() && IsValidExpirationDate();
+        return IsValidCardHolder() && IsValidCVC() && IsValidCardNumber() && IsValidExpirationDate();
     }
 
     public bool IsValidCVC()
@@ -37,8 +37,8 @@ public class CreditCard : IPayable
 
     public bool IsValidCardHolder()
     {
-        string textRegex = "^[A-Za-z\\s]+$";
-        return !Regex.IsMatch(CardHolderName, textRegex);
+        string textRegex = "^\\p{L}+(?:[- ]\\p{L}+)*$";
+        return Regex.IsMatch(CardHolderName, textRegex);
     }
 
     public bool IsValidCardNumber()
