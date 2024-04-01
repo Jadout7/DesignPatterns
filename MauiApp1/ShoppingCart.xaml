@@ -1,35 +1,28 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version=                                                                                                            "1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.ShoppingCart"
              xmlns:viewmodel="clr-namespace:MauiApp1.ViewModel"
              x:DataType="viewmodel:ShoppingCartViewModel"
              Title="ShoppingCart">
-    <ContentPage.Content>
-        <StackLayout Margin="20" HorizontalOptions="CenterAndExpand" Spacing="20">
-        <Label Text="Shopping Cart" FontSize="Title" HorizontalOptions="Center"/>
-            <ListView ItemsSource="{Binding Cars}">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto" />
-                                    <ColumnDefinition Width="*" />
-                                </Grid.ColumnDefinitions>
-                                <Label Grid.Column="0" FontSize="16" />
-                                <Label Grid.Column="1" Text="{Binding Year}" HorizontalTextAlignment="End" FontSize="14" />
-                            </Grid>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            <BoxView BackgroundColor="Black" HorizontalOptions="Center" />
-        <Label Text="Total: " FontSize="Medium" HorizontalTextAlignment="Center" x:Name="TotalPrice"/>
-        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="10,0">
-            <Button Text="Cancel" Margin="0,0,10,0" />
-            <Button Text="Payment"/>
-        </StackLayout>
-    </StackLayout>
-    </ContentPage.Content>
+    <CollectionView ItemsSource="{Binding Cars}">
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Grid Padding="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="0" Grid.Column="0" Text="{Binding Make}" />
+                    <Label Grid.Row="0" Grid.Column="1" Text="{Binding Model}" />
+                    <Label Grid.Row="0" Grid.Column="2" Text="{Binding Year}" />
+                </Grid>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
 </ContentPage>
