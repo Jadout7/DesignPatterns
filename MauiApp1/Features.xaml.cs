@@ -7,18 +7,6 @@ public partial class Features : ContentPage
 		InitializeComponent();
 	}
 
-    void OnVehiclesClicked(object sender, EventArgs e)
-    {
-        // Navigate to the vehicle selection page
-        Application.Current.MainPage = new MainPage();
-    }
-
-    void OnCartClicked(object sender, EventArgs e)
-    {
-        // Navigate to the cart page
-        Application.Current.MainPage = new PaymentSelect();
-    }
-
     private void OnViewClicked(object sender, EventArgs e)
     {
         var featureWrapper = (sender as Button)?.BindingContext as FeatureWrapper;

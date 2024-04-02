@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\infxm\OneDrive\Documents\GitHub\DesignPatterns\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-04-01T22:41:10.928</Modified>
+      <Modified>2024-04-02T14:13:24.548</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\infxm\OneDrive\Documents\GitHub\DesignPatterns\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-04-01T22:41:10.662</Modified>
+      <Modified>2024-04-02T14:13:24.269</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\infxm\OneDrive\Documents\GitHub\DesignPatterns\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CarShowroom.runtimeconfig.json">
       <PackagePath>CarShowroom.runtimeconfig.json</PackagePath>
-      <Modified>2024-04-01T15:05:29.891</Modified>
+      <Modified>2024-04-01T23:11:38.974</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\infxm\OneDrive\Documents\GitHub\DesignPatterns\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CarShowroom.dll">
       <PackagePath>CarShowroom.dll</PackagePath>
-      <Modified>2024-04-01T22:41:09.339</Modified>
+      <Modified>2024-04-02T14:13:22.540</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\infxm\OneDrive\Documents\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>CarShowroom.exe</PackagePath>
-      <Modified>2024-04-01T22:41:09.408</Modified>
+      <Modified>2024-04-02T14:13:22.644</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\infxm\OneDrive\Documents\GitHub\DesignPatterns\MauiApp1\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -267,15 +267,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\infxm\OneDrive\Documents\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\hardtire.scale-100.png">
       <PackagePath>hardtire.scale-100.png</PackagePath>
-      <Modified>2024-04-01T20:56:00.578</Modified>
+      <Modified>2024-04-01T23:08:27.216</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\infxm\OneDrive\Documents\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo.scale-100.png">
+      <PackagePath>logo.scale-100.png</PackagePath>
+      <Modified>2024-04-02T13:38:52.952</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\infxm\OneDrive\Documents\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\spoiler.scale-100.png">
       <PackagePath>spoiler.scale-100.png</PackagePath>
-      <Modified>2024-04-01T15:48:59.937</Modified>
+      <Modified>2024-04-01T23:08:27.217</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\infxm\OneDrive\Documents\GitHub\DesignPatterns\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CarShowroom.deps.json">
       <PackagePath>CarShowroom.deps.json</PackagePath>
-      <Modified>2024-04-01T21:17:40.950</Modified>
+      <Modified>2024-04-02T11:31:36.910</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\infxm\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

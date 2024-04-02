@@ -351,3 +351,4 @@ C:\Users\infxm\OneDrive\Documents\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.
 C:\Users\infxm\OneDrive\Documents\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
 C:\Users\infxm\OneDrive\Documents\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\hardtire.scale-100.png
 C:\Users\infxm\OneDrive\Documents\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\spoiler.scale-100.png
+C:\Users\infxm\OneDrive\Documents\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo.scale-100.png
