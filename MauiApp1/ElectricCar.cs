@@ -16,12 +16,4 @@
     {
         this.BatteryPercentage = batteryPercentage;
     }
-
-    //TODO: Add featureWrappers
-
-    //public override float CalculateTax()
-    //{
-    //    // Implement tax calculation for electric cars
-    //    return 0;
-    //}
 }

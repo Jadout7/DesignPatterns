@@ -2,26 +2,35 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.ShoppingCart"
-             xmlns:viewmodel="clr-namespace:MauiApp1.ViewModel"
-             x:DataType="viewmodel:ShoppingCartViewModel"
+             xmlns:vm="clr-namespace:MauiApp1"
+             xmlns:local="clr-namespace:MauiApp1"
              Title="ShoppingCart">
-    <CollectionView ItemsSource="{Binding Cars}">
+    <ContentPage.BindingContext>
+        <vm:ShoppingCartViewModel/>
+    </ContentPage.BindingContext>
+    <!-- Feature list -->
+    <CollectionView ItemsSource="{Binding OrderGroups}" Margin="20, 0, 20, 0">
+        <CollectionView.ItemsLayout>
+            <LinearItemsLayout Orientation="Vertical" ItemSpacing="20" />
+        </CollectionView.ItemsLayout>
         <CollectionView.ItemTemplate>
             <DataTemplate>
-                <Grid Padding="10">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Label Grid.Row="0" Grid.Column="0" Text="{Binding Make}" />
-                    <Label Grid.Row="0" Grid.Column="1" Text="{Binding Model}" />
-                    <Label Grid.Row="0" Grid.Column="2" Text="{Binding Year}" />
-                </Grid>
+                <StackLayout>
+                    <Label HorizontalOptions="CenterAndExpand" FontAttributes="Bold" Text="{Binding OrderCarType}" FontSize="Title" Margin="0,20,0,15" />
+                    <ScrollView Orientation="Horizontal">
+                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand" BindableLayout.ItemsSource="{Binding Car}">
+                            <BindableLayout.ItemTemplate>
+                                <DataTemplate>
+                                    <Frame BackgroundColor="White" Margin="0,0,20,0" WidthRequest="250" HeightRequest="250">
+                                        <StackLayout>
+                                            <Image Margin="25,0,25,0"  Source="{Binding ImageSource}" Aspect="AspectFill" />
+                                        </StackLayout>
+                                    </Frame>
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+                        </HorizontalStackLayout>
+                    </ScrollView>
+                </StackLayout>
             </DataTemplate>
         </CollectionView.ItemTemplate>
     </CollectionView>

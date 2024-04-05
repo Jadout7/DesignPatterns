@@ -13,13 +13,12 @@ public partial class PaymentSelect : ContentPage
 
     private void CancelButton_Clicked(object sender, EventArgs e)
     {
-        Application.Current.MainPage = new MainPage(); // Replace with your actual exit logic
+        Application.Current.MainPage = new MainPage(); 
     }
 
     private void PayButton_Clicked(object sender, EventArgs e)
     {
-        // Handle payment logic here (e.g., check selected bank in idealDropdown)
-        Application.Current.MainPage = new MainPage(); // Replace with your success page
+        Application.Current.MainPage = new MainPage(); 
     }
 
     private void Button_Clicked(object sender, EventArgs e)

@@ -1,17 +1,26 @@
 ﻿using System.Collections.Generic;
 
-class Order
+public class Order
 {
-    private List<Car> cars;
+    public int OrderNumber { get; set; }
+    public string OrderCarType { get; set; }
+    public List<Car> cars;
 
-    public Order()
+    public Order(int orderNumber, string orderCarType, List<Car> cars)
     {
+        OrderNumber = orderNumber;
+        OrderCarType = orderCarType;
         cars = new List<Car>();
     }
 
-    public void AddItem(Car car)
+    public void AddCar(Car car)
     {
         this.cars.Add(car);
+    }
+
+    public void RemoveCar(Car car)
+    {
+        this.cars.Remove(car);
     }
 
     public float GetTotalPrice()
