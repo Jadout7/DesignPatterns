@@ -22,6 +22,6 @@ public partial class HeaderView : ContentView
     void OnCartClicked(object sender, EventArgs e)
     {
         // Navigate to the cart page
-        Application.Current.MainPage = new PaymentSelect();
+        Application.Current.MainPage = new ShoppingCart();
     }
 }

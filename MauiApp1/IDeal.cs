@@ -50,7 +50,7 @@ public class IDeal
         {
             return false;
         }
-        if (iban.StartsWith("^[A-Z]{2}[0-9]{2}[A-Z0-9]{9,34}$"))
+        if (!Regex.IsMatch(iban, "^([A-Z]{2}[0-9]{2})(?:(?![a-wyzA-WYZ])[a-zA-Z0-9]){10,30}$"))
         {
             return false;
         }
