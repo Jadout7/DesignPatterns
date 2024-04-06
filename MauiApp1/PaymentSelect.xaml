@@ -4,7 +4,6 @@
              x:Class="MauiApp1.PaymentSelect"
              Title="PaymentSelect"
              Padding="20">
-    <ContentPage.Content>
         <StackLayout Margin="20" HorizontalOptions="Center" Spacing="20">
             <Label Text="Payment Details" FontSize="Title"/>
             <StackLayout Orientation="Horizontal">
@@ -28,6 +27,6 @@
             <Entry Placeholder="Account holder name"  IsVisible="False" x:Name="AccountHolderName"/>
             <Line X1="0" Y1="0" X2=" 400" Y2="0" Stroke="Black" StrokeThickness="2" HorizontalOptions="Center"/>
             <Button Text="Pay" Clicked="Button_Clicked" x:Name="Pay"/>
-        </StackLayout>
-    </ContentPage.Content>
+        <Button Text="Cancel" x:Name="Cancel" Clicked="Cancel_Clicked"/>
+    </StackLayout>
 </ContentPage>

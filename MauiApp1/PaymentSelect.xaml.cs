@@ -1,27 +1,29 @@
 using System.Text;
-
 namespace MauiApp1;
 
 public partial class PaymentSelect : ContentPage
 {
     private bool isCreditCard = true;
+    private Order order;
 
-    public PaymentSelect()
+    public PaymentSelect(Order order)
 	{
 		InitializeComponent();
-	}
 
-    private void CancelButton_Clicked(object sender, EventArgs e)
-    {
-        Application.Current.MainPage = new MainPage(); 
+        this.order = order;
     }
 
-    private void PayButton_Clicked(object sender, EventArgs e)
+    private async void CancelButton_Clicked(object sender, EventArgs e)
     {
-        Application.Current.MainPage = new MainPage(); 
+        await NavigateToShowRoom();
     }
 
-    private void Button_Clicked(object sender, EventArgs e)
+    private async void PayButton_Clicked(object sender, EventArgs e)
+    {
+        await NavigateToShowRoom();
+    }
+
+    private async void Button_Clicked(object sender, EventArgs e)
     {
         if (isCreditCard)
         {
@@ -34,7 +36,8 @@ public partial class PaymentSelect : ContentPage
 
             if (tempCard.ProcessPayment())
             {
-                Application.Current.MainPage = new MainPage();
+                order.Pay();
+                await NavigateToShowRoom();
             }
             else
             {
@@ -49,8 +52,9 @@ public partial class PaymentSelect : ContentPage
 
             if (tempAdapter.ProcessPayment())
             {
-                Application.Current.MainPage = new MainPage();
-            } 
+                order.Pay();
+                await NavigateToShowRoom();
+            }
             else
             {
                 DisplayAlert("PaymentError", "One or more entries incorrect", "OK");
@@ -91,20 +95,16 @@ public partial class PaymentSelect : ContentPage
 
         isCreditCard = false;
     }
-
+    
     private void ExpirationDate_TextChanged(object sender, TextChangedEventArgs e)
     {
 
         string currentText = e.NewTextValue;
 
-        // Check if the length is 2 and the last character is not already "/"
         if (currentText.Length == 3 && currentText[currentText.Length - 1] != '/')
         {
-
             StringBuilder modifiedString = new StringBuilder(currentText);
-
             modifiedString.Insert(2, "/");
-
             ExpirationDate.Text = modifiedString.ToString(); 
         }
 
@@ -132,5 +132,16 @@ public partial class PaymentSelect : ContentPage
         {
             CVC.Text = currentText.Substring(0, 3);
         }
+    }
+
+    public static async Task NavigateToShowRoom()
+    {
+        await Application.Current.MainPage.Navigation.PushAsync(new MainPage());
+    }
+
+    private async void Cancel_Clicked(object sender, EventArgs e)
+    {
+        //DisplayAlert("Hey", order.getTotalPrice().ToString(), "Cancel");
+        await Navigation.PopAsync();
     }
 }

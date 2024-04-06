@@ -6,26 +6,23 @@ using Microsoft.Maui.Controls;
 
 namespace MauiApp1;
 
-public partial class ShoppingCartViewModel : ObservableObject
+public class ShoppingCartViewModel : INotifyPropertyChanged
 {
+    private Order _order;
+
+    public Order Order
+    {
+        get => _order;
+        set
+        {
+            _order = value;
+            OnPropertyChanged();
+        }
+    }
+
     public event PropertyChangedEventHandler PropertyChanged;
 
-    [ObservableProperty]
-    private ObservableCollection<Order> _orderGroups;
-
-    public ShoppingCartViewModel()
-    {
-        var car = new ObservableCollection<Order>();
-        {
-            new Order(1, "Petrol", new List<Car>
-            {
-                new PetrolCar(1,"Brand","CarModel",2021,12000,"RocketFuel"),
-                new PetrolCar(2, "Brand2", "CarModel2", 2021, 16000, "E90")
-            });
-        }
-
-        OrderGroups = new ObservableCollection<Order>(car);
-    }
+    public float TotalPrice => Order?.getTotalPrice() ?? 0; 
 
     protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
     {

@@ -1,41 +1,23 @@
-﻿using System.Collections.Generic;
-
-public class Order
+﻿public class Order
 {
-    public int OrderNumber { get; set; }
-    public string OrderCarType { get; set; }
-    public List<Car> cars;
+    public List<Car> Cars { get; set; }
 
-    public Order(int orderNumber, string orderCarType, List<Car> cars)
+    public Order()
     {
-        OrderNumber = orderNumber;
-        OrderCarType = orderCarType;
-        cars = new List<Car>();
-    }
-
-    public void AddCar(Car car)
-    {
-        this.cars.Add(car);
-    }
-
-    public void RemoveCar(Car car)
-    {
-        this.cars.Remove(car);
-    }
-
-    public float GetTotalPrice()
-    {
-        float totalPrice = 0;
-        foreach (Car car in cars)
-        {
-            totalPrice += car.Price;
-        }
-        return totalPrice;
+        Cars = new List<Car>();
     }
 
     public void Pay()
     {
-        // Implement the payment process
+        Cars.Clear();
+    }
 
+    public float getTotalPrice()
+    {
+        float totalPrice = 0;
+        foreach (Car car in Cars) {
+            totalPrice += car.Price;
+        }
+        return totalPrice;
     }
 }
