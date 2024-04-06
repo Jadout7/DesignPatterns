@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-04-06T21:30:35.567</Modified>
+      <Modified>2024-04-06T21:50:06.953</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-04-06T21:30:35.519</Modified>
+      <Modified>2024-04-06T21:50:06.904</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CarShowroom.runtimeconfig.json">
       <PackagePath>CarShowroom.runtimeconfig.json</PackagePath>
-      <Modified>2024-04-06T16:08:32.893</Modified>
+      <Modified>2024-04-06T21:43:27.245</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CarShowroom.dll">
       <PackagePath>CarShowroom.dll</PackagePath>
-      <Modified>2024-04-06T21:30:35.354</Modified>
+      <Modified>2024-04-06T21:50:06.757</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>CarShowroom.exe</PackagePath>
-      <Modified>2024-04-06T21:30:35.356</Modified>
+      <Modified>2024-04-06T21:50:06.761</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -267,59 +267,59 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bannercar.scale-100.jpg">
       <PackagePath>bannercar.scale-100.jpg</PackagePath>
-      <Modified>2024-04-06T15:55:22.477</Modified>
+      <Modified>2024-04-06T21:46:15.474</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\camaro.scale-100.jpg">
       <PackagePath>camaro.scale-100.jpg</PackagePath>
-      <Modified>2024-04-06T20:47:58.186</Modified>
+      <Modified>2024-04-06T21:46:15.478</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\es8.scale-100.jpg">
       <PackagePath>es8.scale-100.jpg</PackagePath>
-      <Modified>2024-04-06T20:41:42.658</Modified>
+      <Modified>2024-04-06T21:46:15.490</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\e_tron_gt.scale-100.jpg">
       <PackagePath>e_tron_gt.scale-100.jpg</PackagePath>
-      <Modified>2024-04-06T20:43:30.769</Modified>
+      <Modified>2024-04-06T21:46:15.484</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\hardtire.scale-100.png">
       <PackagePath>hardtire.scale-100.png</PackagePath>
-      <Modified>2024-04-06T15:49:31.609</Modified>
+      <Modified>2024-04-06T21:46:15.491</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\insight.scale-100.jpg">
       <PackagePath>insight.scale-100.jpg</PackagePath>
-      <Modified>2024-04-06T20:46:06.603</Modified>
+      <Modified>2024-04-06T21:46:15.496</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo.scale-100.png">
       <PackagePath>logo.scale-100.png</PackagePath>
-      <Modified>2024-04-06T15:49:31.610</Modified>
+      <Modified>2024-04-06T21:46:15.496</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\m5.scale-100.jpg">
       <PackagePath>m5.scale-100.jpg</PackagePath>
-      <Modified>2024-04-06T20:48:45.640</Modified>
+      <Modified>2024-04-06T21:46:15.503</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\model_s.scale-100.jpg">
       <PackagePath>model_s.scale-100.jpg</PackagePath>
-      <Modified>2024-04-06T20:40:24.713</Modified>
+      <Modified>2024-04-06T21:46:15.506</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\mustang.scale-100.jpg">
       <PackagePath>mustang.scale-100.jpg</PackagePath>
-      <Modified>2024-04-06T20:47:05.264</Modified>
+      <Modified>2024-04-06T21:46:15.508</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\prius.scale-100.jpg">
       <PackagePath>prius.scale-100.jpg</PackagePath>
-      <Modified>2024-04-06T20:45:03.994</Modified>
+      <Modified>2024-04-06T21:46:15.512</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\rx_450h.scale-100.jpg">
       <PackagePath>rx_450h.scale-100.jpg</PackagePath>
-      <Modified>2024-04-06T20:46:31.650</Modified>
+      <Modified>2024-04-06T21:46:15.514</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\spoiler.scale-100.png">
       <PackagePath>spoiler.scale-100.png</PackagePath>
-      <Modified>2024-04-06T15:49:31.610</Modified>
+      <Modified>2024-04-06T21:46:15.515</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CarShowroom.deps.json">
       <PackagePath>CarShowroom.deps.json</PackagePath>
-      <Modified>2024-04-06T21:18:53.964</Modified>
+      <Modified>2024-04-06T21:49:49.483</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
