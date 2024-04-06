@@ -1,32 +1,18 @@
-﻿using System;
-
-public class CarFactory
+﻿namespace MauiApp1;
+public static class CarFactory
 {
-    public Car CreateCar(Car carType)
+    public static Car CreateCar(string carType, string brand, string model, long vin, int yearMade, float price)
     {
-        if (carType == null)
+        switch (carType.ToLower())
         {
-            return null;
-        }
-
-        // TODO: Ask about whether a simple factory, factory method, or abstract factory should be used.
-
-        if (carType is ElectricCar)
-        {
-            return new ElectricCar(carType.Vin, carType.Brand, carType.Model, carType.YearMade, carType.Price);
-        }
-        else if (carType is PetrolCar)
-        {
-            //return new PetrolCar(carType.Vin, carType.Brand, carType.Model, carType.YearMade, carType.Price);
-            return null;
-        }
-        else if (carType is HydrogenCar)
-        {
-            return new HydrogenCar(carType.Vin, carType.Brand, carType.Model, carType.YearMade, carType.Price);
-        }
-        else
-        {
-            return null;
+            case "electric":
+                return new ElectricCar(vin, brand, model, yearMade, price);
+            case "hybrid":
+                return new HydrogenCar(vin, brand, model, yearMade, price);
+            case "petrol":
+                return new PetrolCar(vin, brand, model, yearMade, price);
+            default:
+                throw new ArgumentException("Invalid car type");
         }
     }
 }
