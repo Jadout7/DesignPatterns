@@ -2,17 +2,15 @@
 
 public abstract class Car
 {
-    private long _vin;
     public long Vin { get; set; }
-    private string _brand;
+
     public string Brand { get; set; }
-    private string _model;
+
     public string Model { get; set; }
-    private int yearMade;
+
     public int YearMade { get; set; }
-    private float price;
+
     public float Price {  get; set; }
-    public string ImageSource { get; set; }
     private List<FeatureWrapper> featureWrappers;
 
     public Car(long vin, string brand, string model, int yearMade, float price)
@@ -45,5 +43,13 @@ public abstract class Car
     public float GetPriceWithTax()
     {
         return Price + CalculateTax();
+    }
+
+    public string ImageSource
+    {
+        get {
+            string sanitizedModel = Model.Replace(" ", "_").ToLower();
+            return $"../{sanitizedModel.Replace("-", "_")}.jpg";
+        }
     }
 }

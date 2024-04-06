@@ -6,7 +6,6 @@ public class HydrogenCar : Car
     public double HydrogenTankPercentage { get; set; }
     public HydrogenCar(long vin, string brand, string model, int yearMade, float price) : base(vin, brand, model, yearMade, price)
     {
-        ImageSource = "../hydrogen.jpg";
         HydrogenTankPercentage = 100.0;
         _hydrogenTankPercentage = HydrogenTankPercentage;
     }

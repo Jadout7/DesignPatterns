@@ -1,24 +1,18 @@
 ﻿namespace MauiApp1;
-public class CarFactory
+public static class CarFactory
 {
-    public CarFactory()
+    public static Car CreateCar(string carType, string brand, string model, long vin, int yearMade, float price)
     {
-    }
-
-    public Car CreateCar(string carType)
-    {
-        carType = carType.ToLower();
-        switch (carType)
+        switch (carType.ToLower())
         {
-            case "petrol":
-                return new PetrolCar(12345, "vw", "beetle", 2013, 10000f);
             case "electric":
-                return new ElectricCar(12345, "tesla", "Y", 2015, 20000f);
-            case "hydrogen":
-                return new HydrogenCar(09876, "toyota", "spaceCar", 2013, 30000f);
+                return new ElectricCar(vin, brand, model, yearMade, price);
+            case "hybrid":
+                return new HydrogenCar(vin, brand, model, yearMade, price);
+            case "petrol":
+                return new PetrolCar(vin, brand, model, yearMade, price);
             default:
-                return null;
-
+                throw new ArgumentException("Invalid car type");
         }
     }
 }

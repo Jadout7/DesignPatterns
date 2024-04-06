@@ -202,20 +202,38 @@
     <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bannercar.scale-100.jpg">
       <PackagePath>bannercar.scale-100.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\electric.scale-100.jpeg">
-      <PackagePath>electric.scale-100.jpeg</PackagePath>
+    <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\camaro.scale-100.jpg">
+      <PackagePath>camaro.scale-100.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\es8.scale-100.jpg">
+      <PackagePath>es8.scale-100.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\e_tron_gt.scale-100.jpg">
+      <PackagePath>e_tron_gt.scale-100.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\hardtire.scale-100.png">
       <PackagePath>hardtire.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\hydrogen.scale-100.jpg">
-      <PackagePath>hydrogen.scale-100.jpg</PackagePath>
+    <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\insight.scale-100.jpg">
+      <PackagePath>insight.scale-100.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo.scale-100.png">
       <PackagePath>logo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\petrol.scale-100.jpeg">
-      <PackagePath>petrol.scale-100.jpeg</PackagePath>
+    <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\m5.scale-100.jpg">
+      <PackagePath>m5.scale-100.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\model_s.scale-100.jpg">
+      <PackagePath>model_s.scale-100.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\mustang.scale-100.jpg">
+      <PackagePath>mustang.scale-100.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\prius.scale-100.jpg">
+      <PackagePath>prius.scale-100.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\rx_450h.scale-100.jpg">
+      <PackagePath>rx_450h.scale-100.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\spoiler.scale-100.png">
       <PackagePath>spoiler.scale-100.png</PackagePath>

@@ -7,7 +7,6 @@ public class ElectricCar : Car
     {
         BatteryPercentage = 100.0;
         _batteryPercentage = BatteryPercentage;
-        ImageSource = "../electric.jpeg";
     }
 
     //TODO: Add featureWrappers

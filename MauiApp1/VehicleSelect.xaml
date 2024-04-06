@@ -9,47 +9,40 @@
     </ContentPage.BindingContext>
 
     <ScrollView>
-        <VerticalStackLayout BackgroundColor="Beige">
+        <VerticalStackLayout BackgroundColor="Grey">
 
             <local:HeaderView/>
 
             <Grid>
                 <Label Padding="20,40,20,0" Text="All Cars" FontSize="36" FontAttributes="Italic" FontFamily="Verdana" HorizontalOptions="StartAndExpand"/>
             </Grid>
-
-            <!-- Vehicle list -->
-            <CollectionView ItemsSource="{Binding Cars}" Margin="20, 0, 20, 0">
-                <CollectionView.ItemsLayout>
-                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="20" />
-                </CollectionView.ItemsLayout>
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <StackLayout>
-                            <Label HorizontalOptions="CenterAndExpand" FontAttributes="Bold" Text="{Binding Name}" FontSize="Title" Margin="0,20,0,15" />
-                            <ScrollView Orientation="Horizontal">
-                                <HorizontalStackLayout HorizontalOptions="CenterAndExpand" BindableLayout.ItemsSource="{Binding VehicleSelect}">
-                                    <BindableLayout.ItemTemplate>
-                                        <DataTemplate>
-                                            <Frame BackgroundColor="White" Margin="0,0,20,0" WidthRequest="250" HeightRequest="250">
-                                                <StackLayout>
-                                                    <Image Margin="25,0,25,0" Source="{Binding ImageSource}" Aspect="AspectFill" />
-                                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                                                        <Button BackgroundColor="Black" FontSize="Medium" CornerRadius="0"  Clicked= "OnViewClicked" TextColor="White" Text="View" />
-                                                        <Button Margin="2, 0, 0, 0" BackgroundColor="Black" FontSize="Medium" CornerRadius="0" TextColor="White" Text="Add" Clicked="OnSelectClicked"/>
-                                                    </StackLayout>
-                                                </StackLayout>
-                                            </Frame>
-                                        </DataTemplate>
-                                    </BindableLayout.ItemTemplate>
-                                </HorizontalStackLayout>
-                            </ScrollView>
-                        </StackLayout>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-
-            <!-- Continue button -->
-            <Button Margin="0,35,12,0" HeightRequest="60" BackgroundColor="Black" FontSize="14" Text="CONTINUE SHOPPING" HorizontalOptions="EndAndExpand" VerticalOptions="End" />
+            <StackLayout>
+                <Label Text="In Stock" FontSize="Large" HorizontalOptions="Center" Margin="0,0,0,20"/>
+                <FlexLayout Wrap="Wrap" JustifyContent="SpaceAround">
+                    <BindableLayout.ItemsSource>
+                        <Binding Path="Cars" />
+                    </BindableLayout.ItemsSource>
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout WidthRequest="550" HeightRequest="450" Margin="5">
+                                <Image Source="{Binding ImageSource}" Aspect="AspectFit" />
+                                <Label FontSize="Medium">
+                                    <Label.Text>
+                                        <MultiBinding StringFormat="{}{0} {1} {2}">
+                                            <Binding Path="Brand"/>
+                                            <Binding Path="Model"/>
+                                            <Binding Path="YearMade"/>
+                                        </MultiBinding>
+                                    </Label.Text>
+                                </Label>
+                                <Label Text="{Binding Price, StringFormat='Price: {0:C}'}" FontSize="Small" />
+                                <Button Text="Add to Cart" Clicked="AddToList_Clicked" CommandParameter="{Binding .}" />
+                                <BoxView HeightRequest="1" BackgroundColor="Gray" HorizontalOptions="FillAndExpand" Margin="0,5,0,5"/>
+                            </StackLayout>
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </FlexLayout>
+            </StackLayout>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
