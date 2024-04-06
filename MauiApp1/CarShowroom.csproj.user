@@ -6,16 +6,10 @@
     <ActiveDebugProfile>Windows Machine</ActiveDebugProfile>
   </PropertyGroup>
   <ItemGroup>
-    <MauiXaml Update="Features.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
-    <MauiXaml Update="HeaderView.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
     <MauiXaml Update="PaymentSelect.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Showroom.xaml">
+    <MauiXaml Update="ShoppingCart.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

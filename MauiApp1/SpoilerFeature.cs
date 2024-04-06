@@ -2,12 +2,8 @@
 
 public class SpoilerFeature : FeatureWrapper
 {
-    public SpoilerFeature()
+    public SpoilerFeature(Car car, double price, double taxAmount) : base(car, price, taxAmount)
     {
-        Title = "Spoiler";
-        ImageSource = "../spoiler.png";
-        Price = 500;
-        TaxAmount = 50;
     }
 
     public void IncreaseSpeed()
