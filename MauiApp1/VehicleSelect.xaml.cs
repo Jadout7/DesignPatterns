@@ -5,14 +5,16 @@ public partial class VehicleSelect : ContentPage
 	private readonly VehicleSelectViewModel _viewModel;
 	VehicleSelectViewModel viewModel;
 
-	public VehicleSelect(VehicleSelectViewModel vm)
+	public VehicleSelect()
 	{
 		InitializeComponent();
-		_viewModel = vm;
+
+		var vm = new VehicleSelectViewModel();
+        _viewModel = vm;
 		BindingContext = vm;
 	}
 
-	private void OnViewClicked(object sender, EventArgs e)
+    private void OnViewClicked(object sender, EventArgs e)
 	{
 		var car = (sender as Button)?.BindingContext as Car;
 		if (car != null)
@@ -27,5 +29,4 @@ public partial class VehicleSelect : ContentPage
 		var addToCart = new Order();
 		addToCart.AddItem(car);
     }
-
 }

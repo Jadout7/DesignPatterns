@@ -5,7 +5,7 @@
              x:Class="MauiApp1.VehicleSelect"
              Title="VehicleSelect">
     <ContentPage.BindingContext>
-        <vm:VehicleSelectViewModel/> 
+        <vm:VehicleSelectViewModel/>
     </ContentPage.BindingContext>
 
     <ScrollView>
@@ -32,7 +32,6 @@
                                         <DataTemplate>
                                             <Frame BackgroundColor="White" Margin="0,0,20,0" WidthRequest="250" HeightRequest="250">
                                                 <StackLayout>
-                                                    
                                                     <Image Margin="25,0,25,0" Source="{Binding ImageSource}" Aspect="AspectFill" />
                                                     <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                                                         <Button BackgroundColor="Black" FontSize="Medium" CornerRadius="0"  Clicked= "OnViewClicked" TextColor="White" Text="View" />
@@ -43,16 +42,14 @@
                                         </DataTemplate>
                                     </BindableLayout.ItemTemplate>
                                 </HorizontalStackLayout>
-s                            </ScrollView>
+                            </ScrollView>
                         </StackLayout>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
 
+            <!-- Continue button -->
+            <Button Margin="0,35,12,0" HeightRequest="60" BackgroundColor="Black" FontSize="14" Text="CONTINUE SHOPPING" HorizontalOptions="EndAndExpand" VerticalOptions="End" />
         </VerticalStackLayout>
-        <!-- Continue button -->
-            <Button Margin="0,35,12,0" HeightRequest="60" BackgroundColor="Black" FontSize="14" Text="CONTINUE SHOPPING" Clicked="OnContinueClicked" HorizontalOptions="EndAndExpand" VerticalOptions="End" />
-
-
     </ScrollView>
 </ContentPage>

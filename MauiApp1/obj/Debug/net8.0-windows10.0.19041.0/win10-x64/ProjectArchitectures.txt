@@ -1,1 +1,1 @@
-C:\Users\khoud\source\repos\DesignPatterns\MauiApp1\CarShowroom.csproj;x64
+C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\CarShowroom.csproj;x64
