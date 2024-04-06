@@ -21,18 +21,18 @@ namespace MauiApp1
 
         public ShowroomViewModel()
         {
-            Cars = new ObservableCollection<Car>();
-            Cars.Add(CarFactory.CreateCar("electric", "Tesla", "Model S", 1234567890, 2022, 10000));
-            Cars.Add(CarFactory.CreateCar("electric", "NIO", "ES8", 9876543210, 2021, 35000));
-            Cars.Add(CarFactory.CreateCar("electric", "Audi", "e-tron GT", 5678901234, 2020, 6000));
-
-            Cars.Add(CarFactory.CreateCar("hybrid", "Toyota", "Prius", 1357924680, 2022, 20000));
-            Cars.Add(CarFactory.CreateCar("hybrid", "Honda", "Insight", 2468013579, 2021, 20000));
-            Cars.Add(CarFactory.CreateCar("hybrid", "Lexus", "RX 450h", 9876543210, 2020, 20000));
-
-            Cars.Add(CarFactory.CreateCar("petrol", "Ford", "Mustang", 1234567890, 2022, 20000));
-            Cars.Add(CarFactory.CreateCar("petrol", "Chevrolet", "Camaro", 2468013579, 2021, 20000));
-            Cars.Add(CarFactory.CreateCar("petrol", "BMW", "M5", 1357924680, 2020, 20000));
+            Cars =
+            [
+                CarFactory.CreateCar("electric", "Tesla", "Model S", 1234567890, 2022, 10000),
+                CarFactory.CreateCar("electric", "NIO", "ES8", 9876543210, 2021, 35000),
+                CarFactory.CreateCar("electric", "Audi", "e-tron GT", 5678901234, 2020, 6000),
+                CarFactory.CreateCar("hybrid", "Toyota", "Prius", 1357924680, 2022, 20000),
+                CarFactory.CreateCar("hybrid", "Honda", "Insight", 2468013579, 2021, 20000),
+                CarFactory.CreateCar("hybrid", "Lexus", "RX 450h", 9876543210, 2020, 20000),
+                CarFactory.CreateCar("petrol", "Ford", "Mustang", 1234567890, 2022, 20000),
+                CarFactory.CreateCar("petrol", "Chevrolet", "Camaro", 2468013579, 2021, 20000),
+                CarFactory.CreateCar("petrol", "BMW", "M5", 1357924680, 2020, 20000),
+            ];
         }
     }
 }
