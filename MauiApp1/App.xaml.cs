@@ -5,9 +5,8 @@
         public App()
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new ShoppingCart());
-            //MainPage = new ShoppingCart();
-            //MainPage = new PaymentSelect();
+
+            MainPage = new Showroom();
         }
     }
 }

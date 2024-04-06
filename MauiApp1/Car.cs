@@ -2,51 +2,25 @@
 
 public abstract class Car
 {
-    private long vin;
-    private string brand;
-    private string model;
-    private int yearMade;
-    private float price;
+    public long Vin { get; set; }
+
+    public string Brand { get; set; }
+
+    public string Model { get; set; }
+
+    public int YearMade { get; set; }
+
+    public float Price {  get; set; }
     private List<FeatureWrapper> featureWrappers;
 
     public Car(long vin, string brand, string model, int yearMade, float price)
     {
-        this.vin = vin;
-        this.brand = brand;
-        this.model = model;
-        this.yearMade = yearMade;
-        this.price = price;
+        this.Vin = vin;
+        this.Brand = brand;
+        this.Model = model;
+        this.YearMade = yearMade;
+        this.Price = price;
         this.featureWrappers = new List<FeatureWrapper>();
-    }
-
-    public long Vin
-    {
-        get { return vin; }
-        set { vin = value; }
-    }
-
-    public string Brand
-    {
-        get { return brand; }
-        set { brand = value; }
-    }
-
-    public string Model
-    {
-        get { return model; }
-        set { model = value; }
-    }
-
-    public int YearMade
-    {
-        get { return yearMade; }
-        set { yearMade = value; }
-    }
-
-    public float Price
-    {
-        get { return price; }
-        set { price = value; }
     }
 
     public float CalculateTax()
@@ -69,5 +43,13 @@ public abstract class Car
     public float GetPriceWithTax()
     {
         return Price + CalculateTax();
+    }
+
+    public string ImageSource
+    {
+        get {
+            string sanitizedModel = Model.Replace(" ", "_").ToLower();
+            return $"../{sanitizedModel.Replace("-", "_")}.jpg";
+        }
     }
 }

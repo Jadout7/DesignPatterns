@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.HeaderView">
+    <ContentView.Content>
+        <Grid BackgroundColor="BurlyWood"  HeightRequest="80">
+            <Image Source="../logo.png" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="StartAndExpand" ></Image>
+            <StackLayout Margin="0,0,0,0" Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                <Button WidthRequest="135.2" BackgroundColor="Black" FontSize="Medium" CornerRadius="0" TextColor="White" Text="VEHICLES" Clicked="OnVehiclesClicked"/>
+                <Button Margin="2, 0, 0, 0" BackgroundColor="Black" FontSize="Medium" CornerRadius="0" TextColor="White" Text="FEATURES" Clicked="OnFeaturesClicked"/>
+                <Button WidthRequest="135.2" Margin="2, 0, 0, 0" BackgroundColor="Black" FontSize="Medium" CornerRadius="0" TextColor="White" Text="CART" Clicked="OnCartClicked" />
+            </StackLayout>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

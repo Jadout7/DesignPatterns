@@ -14,8 +14,7 @@ namespace MauiApp1
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
-            builder.Services.AddSingleton<ShoppingCart>();
-            builder.Services.AddSingleton<ShoppingCartViewModel>();
+
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
