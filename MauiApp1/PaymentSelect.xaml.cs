@@ -4,13 +4,10 @@ namespace MauiApp1;
 public partial class PaymentSelect : ContentPage
 {
     private bool isCreditCard = true;
-    private Order order;
-
-    public PaymentSelect(Order order)
+    public PaymentSelect()
 	{
 		InitializeComponent();
 
-        this.order = order;
     }
 
     private async void Button_Clicked(object sender, EventArgs e)
@@ -26,7 +23,7 @@ public partial class PaymentSelect : ContentPage
 
             if (tempCard.ProcessPayment())
             {
-                await PaymentRedirect(order);
+                await PaymentRedirect();
             }
             else
             {
@@ -41,7 +38,7 @@ public partial class PaymentSelect : ContentPage
 
             if (tempAdapter.ProcessPayment())
             {
-                await PaymentRedirect(order);
+                await PaymentRedirect();
             }
             else
             {
@@ -122,16 +119,16 @@ public partial class PaymentSelect : ContentPage
         }
     }
 
-    public static async Task PaymentRedirect(Order order)
+    public static async Task PaymentRedirect()
     {
-        order.Pay();
+        Order.Instance.Pay();
         await Application.Current.MainPage.DisplayAlert("Payment Success", "Your payment has been processed successfully.", "OK");
         await Application.Current.MainPage.Navigation.PushAsync(new MainPage());
     }
 
     private async void Cancel_Clicked(object sender, EventArgs e)
     {
-        //PaymentRedirect(order);
+        await DisplayAlert("Current total", Order.Instance.GetTotalPrice().ToString(),"OK"); 
         await Navigation.PopAsync();
     }
 }

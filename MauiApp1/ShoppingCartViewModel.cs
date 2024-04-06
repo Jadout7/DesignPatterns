@@ -22,7 +22,7 @@ public class ShoppingCartViewModel : INotifyPropertyChanged
 
     public event PropertyChangedEventHandler PropertyChanged;
 
-    public float TotalPrice => Order?.getTotalPrice() ?? 0; 
+    public float TotalPrice => Order.Instance?.GetTotalPrice() ?? 0; 
 
     protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
     {

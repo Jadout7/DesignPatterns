@@ -1,8 +1,24 @@
-﻿public class Order
-{
-    public List<Car> Cars { get; set; }
+﻿using System.Collections.Generic;
 
-    public Order()
+public class Order
+{
+    private static Order instance;
+
+    public static Order Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = new Order();
+            }
+            return instance;
+        }
+    }
+
+    public List<Car> Cars { get; private set; }
+
+    private Order()
     {
         Cars = new List<Car>();
     }
@@ -12,10 +28,11 @@
         Cars.Clear();
     }
 
-    public float getTotalPrice()
+    public float GetTotalPrice()
     {
         float totalPrice = 0;
-        foreach (Car car in Cars) {
+        foreach (Car car in Cars)
+        {
             totalPrice += car.Price;
         }
         return totalPrice;
