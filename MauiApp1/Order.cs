@@ -1,33 +1,40 @@
 ﻿using System.Collections.Generic;
 
-class Order
+public class Order
 {
-    private List<Car> cars;
+    private static Order instance;
 
-    public Order()
+    public static Order Instance
     {
-        cars = new List<Car>();
-    }
-
-    public void AddItem(Car car)
-    {
-        this.cars.Add(car);
-    }
-
-    public float GetTotalPrice()
-    {
-        // Calculate and return the total price of the items in the order (for each loop)
-        float totalPrice = 0;
-        foreach (Car car in cars)
+        get
         {
-            totalPrice += car.Price;
+            if (instance == null)
+            {
+                instance = new Order();
+            }
+            return instance;
         }
-        return totalPrice;
+    }
+
+    public List<Car> Cars { get; private set; }
+
+    private Order()
+    {
+        Cars = new List<Car>();
     }
 
     public void Pay()
     {
-        // Implement the payment process
+        Cars.Clear();
+    }
 
+    public float GetTotalPrice()
+    {
+        float totalPrice = 0;
+        foreach (Car car in Cars)
+        {
+            totalPrice += car.Price;
+        }
+        return totalPrice;
     }
 }

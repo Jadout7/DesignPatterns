@@ -3,8 +3,6 @@ namespace MauiApp1;
 
 public partial class Showroom : ContentPage
 {
-    private Order order = new Order();
-
     public Showroom()
     {
         InitializeComponent();
@@ -14,10 +12,11 @@ public partial class Showroom : ContentPage
     {
         var button = (Button)sender;
         var selectedCar = (Car)button.CommandParameter;
-        order.AddItem(selectedCar);
+        Order.Instance.Cars.Add(selectedCar);
 
-        // Display the total price of the order in a DisplayAlert
-        string message = $"Car added to order!\nTotal Price: {order.GetTotalPrice():C}";
+        float totalPrice = Order.Instance.GetTotalPrice();
+
+        string message = $"Car added to order!\nTotal Price: {totalPrice:C}";
         DisplayAlert("Order Confirmation", message, "OK");
     }
 }
