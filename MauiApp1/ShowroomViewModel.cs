@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 
 namespace MauiApp1
 {
-     public class VehicleSelectViewModel : BindableObject
+     public class ShowroomViewModel : BindableObject
     {
         private ObservableCollection<Car> _cars;
 
@@ -19,7 +19,7 @@ namespace MauiApp1
             }
         }
 
-        public VehicleSelectViewModel()
+        public ShowroomViewModel()
         {
             Cars = new ObservableCollection<Car>();
             Cars.Add(CarFactory.CreateCar("electric", "Tesla", "Model S", 1234567890, 2022, 10000));

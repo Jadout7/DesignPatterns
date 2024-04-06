@@ -1,11 +1,11 @@
 namespace MauiApp1;
 
 
-public partial class VehicleSelect : ContentPage
+public partial class Showroom : ContentPage
 {
     private Order order = new Order();
 
-    public VehicleSelect()
+    public Showroom()
     {
         InitializeComponent();
     }

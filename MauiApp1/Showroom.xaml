@@ -2,10 +2,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:MauiApp1"
              xmlns:local="clr-namespace:MauiApp1"
-             x:Class="MauiApp1.VehicleSelect"
-             Title="VehicleSelect">
+             x:Class="MauiApp1.Showroom"
+             Title="Showroom">
     <ContentPage.BindingContext>
-        <vm:VehicleSelectViewModel/>
+        <vm:ShowroomViewModel/>
     </ContentPage.BindingContext>
 
     <ScrollView>

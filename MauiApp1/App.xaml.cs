@@ -6,7 +6,7 @@
         {
             InitializeComponent();
 
-            MainPage = new VehicleSelect();
+            MainPage = new Showroom();
         }
     }
 }

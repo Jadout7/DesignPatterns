@@ -15,7 +15,7 @@
     <MauiXaml Update="PaymentSelect.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="VehicleSelect.xaml">
+    <MauiXaml Update="Showroom.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>
