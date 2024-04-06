@@ -10,7 +10,7 @@ public partial class HeaderView : ContentView
     void OnVehiclesClicked(object sender, EventArgs e)
     {
         // Navigate to the vehicle selection page
-        Application.Current.MainPage = new MainPage();
+        Application.Current.MainPage = new Showroom();
     }
 
     void OnFeaturesClicked(object sender, EventArgs e)
