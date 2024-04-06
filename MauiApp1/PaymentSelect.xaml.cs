@@ -1,28 +1,16 @@
 using System.Text;
-
 namespace MauiApp1;
 
 public partial class PaymentSelect : ContentPage
 {
     private bool isCreditCard = true;
-
     public PaymentSelect()
 	{
 		InitializeComponent();
-	}
 
-    private void CancelButton_Clicked(object sender, EventArgs e)
-    {
-        Application.Current.MainPage = new MainPage(); // Replace with your actual exit logic
     }
 
-    private void PayButton_Clicked(object sender, EventArgs e)
-    {
-        // Handle payment logic here (e.g., check selected bank in idealDropdown)
-        Application.Current.MainPage = new MainPage(); // Replace with your success page
-    }
-
-    private void Button_Clicked(object sender, EventArgs e)
+    private async void Button_Clicked(object sender, EventArgs e)
     {
         if (isCreditCard)
         {
@@ -35,7 +23,7 @@ public partial class PaymentSelect : ContentPage
 
             if (tempCard.ProcessPayment())
             {
-                Application.Current.MainPage = new MainPage();
+                await PaymentRedirect();
             }
             else
             {
@@ -50,8 +38,8 @@ public partial class PaymentSelect : ContentPage
 
             if (tempAdapter.ProcessPayment())
             {
-                Application.Current.MainPage = new MainPage();
-            } 
+                await PaymentRedirect();
+            }
             else
             {
                 DisplayAlert("PaymentError", "One or more entries incorrect", "OK");
@@ -92,20 +80,16 @@ public partial class PaymentSelect : ContentPage
 
         isCreditCard = false;
     }
-
+    
     private void ExpirationDate_TextChanged(object sender, TextChangedEventArgs e)
     {
 
         string currentText = e.NewTextValue;
 
-        // Check if the length is 2 and the last character is not already "/"
         if (currentText.Length == 3 && currentText[currentText.Length - 1] != '/')
         {
-
             StringBuilder modifiedString = new StringBuilder(currentText);
-
             modifiedString.Insert(2, "/");
-
             ExpirationDate.Text = modifiedString.ToString(); 
         }
 
@@ -133,5 +117,18 @@ public partial class PaymentSelect : ContentPage
         {
             CVC.Text = currentText.Substring(0, 3);
         }
+    }
+
+    public static async Task PaymentRedirect()
+    {
+        Order.Instance.Pay();
+        await Application.Current.MainPage.DisplayAlert("Payment Success", "Your payment has been processed successfully.", "OK");
+        await Application.Current.MainPage.Navigation.PushAsync(new MainPage());
+    }
+
+    private async void Cancel_Clicked(object sender, EventArgs e)
+    {
+        await DisplayAlert("Current total", Order.Instance.GetTotalPrice().ToString(),"OK"); 
+        await Navigation.PopAsync();
     }
 }

@@ -57,6 +57,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <AndroidResource Remove="ViewModel\**" />
+	  <Compile Remove="ViewModel\**" />
+	  <EmbeddedResource Remove="ViewModel\**" />
+	  <MauiCss Remove="ViewModel\**" />
+	  <MauiXaml Remove="ViewModel\**" />
+	  <None Remove="ViewModel\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
@@ -64,6 +74,9 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="PaymentSelect.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ShoppingCart.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
