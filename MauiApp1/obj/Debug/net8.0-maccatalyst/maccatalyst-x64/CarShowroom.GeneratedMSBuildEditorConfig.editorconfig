@@ -28,6 +28,18 @@ build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
+[C:/Users/natha/OneDrive/Documentos/GitHub/DesignPatterns/MauiApp1/Features.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Features.xaml
+build_metadata.AdditionalFiles.TargetPath = Features.xaml
+build_metadata.AdditionalFiles.RelativePath = Features.xaml
+
+[C:/Users/natha/OneDrive/Documentos/GitHub/DesignPatterns/MauiApp1/HeaderView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.HeaderView.xaml
+build_metadata.AdditionalFiles.TargetPath = HeaderView.xaml
+build_metadata.AdditionalFiles.RelativePath = HeaderView.xaml
+
 [C:/Users/natha/OneDrive/Documentos/GitHub/DesignPatterns/MauiApp1/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.MainPage.xaml
@@ -52,8 +64,8 @@ build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Resources.Styles.
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/natha/OneDrive/Documentos/GitHub/DesignPatterns/MauiApp1/ShoppingCart.xaml]
+[C:/Users/natha/OneDrive/Documentos/GitHub/DesignPatterns/MauiApp1/Showroom.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.ShoppingCart.xaml
-build_metadata.AdditionalFiles.TargetPath = ShoppingCart.xaml
-build_metadata.AdditionalFiles.RelativePath = ShoppingCart.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Showroom.xaml
+build_metadata.AdditionalFiles.TargetPath = Showroom.xaml
+build_metadata.AdditionalFiles.RelativePath = Showroom.xaml

@@ -2,8 +2,12 @@
 
 public class HardTireFeature : FeatureWrapper
 {
-    public HardTireFeature(Car car, double price, double taxAmount) : base(car, price, taxAmount)
+    public HardTireFeature()
     {
+        Title = "Hard Tires";
+        ImageSource = "../hardtire.png";
+        Price = 800;
+        TaxAmount = 80;
     }
 
     public void IncreaseTraction()

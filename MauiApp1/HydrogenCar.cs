@@ -2,22 +2,12 @@
 
 public class HydrogenCar : Car
 {
+    private double _hydrogenTankPercentage;
     public double HydrogenTankPercentage { get; set; }
-
-    public HydrogenCar(long vin, string brand, string model, int yearMade, float price)
-        : base(vin, brand, model, yearMade, price)
+    public HydrogenCar(long vin, string brand, string model, int yearMade, float price) : base(vin, brand, model, yearMade, price)
     {
         HydrogenTankPercentage = 100.0;
-    }
-
-    public double GetHydrogenTankPercentage()
-    {
-        return HydrogenTankPercentage;
-    }
-
-    public void SetHydrogenTankPercentage(double hydrogenTankPercentage)
-    {
-        HydrogenTankPercentage = hydrogenTankPercentage;
+        _hydrogenTankPercentage = HydrogenTankPercentage;
     }
 
     //TODO: Add FeatureWrappers

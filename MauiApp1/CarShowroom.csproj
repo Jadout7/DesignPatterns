@@ -47,7 +47,6 @@
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
-		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -57,12 +56,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <AndroidResource Remove="ViewModel\**" />
-	  <Compile Remove="ViewModel\**" />
-	  <EmbeddedResource Remove="ViewModel\**" />
-	  <MauiCss Remove="ViewModel\**" />
-	  <MauiXaml Remove="ViewModel\**" />
-	  <None Remove="ViewModel\**" />
+	  <None Remove="Resources\Images\bannercar.jpg" />
+	  <None Remove="Resources\Images\electric.jpeg" />
+	  <None Remove="Resources\Images\hydrogen.jpg" />
+	  <None Remove="Resources\Images\petrol.jpeg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -73,12 +70,30 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Showroom.xaml.cs">
+	    <DependentUpon>Showroom.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Features.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="HeaderView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="PaymentSelect.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ShoppingCart.xaml">
+	  <MauiXaml Update="Showroom.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="Features.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </None>
 	</ItemGroup>
 
 </Project>
