@@ -13,16 +13,6 @@ public partial class PaymentSelect : ContentPage
         this.order = order;
     }
 
-    private async void CancelButton_Clicked(object sender, EventArgs e)
-    {
-        await NavigateToShowRoom();
-    }
-
-    private async void PayButton_Clicked(object sender, EventArgs e)
-    {
-        await NavigateToShowRoom();
-    }
-
     private async void Button_Clicked(object sender, EventArgs e)
     {
         if (isCreditCard)
@@ -36,8 +26,7 @@ public partial class PaymentSelect : ContentPage
 
             if (tempCard.ProcessPayment())
             {
-                order.Pay();
-                await NavigateToShowRoom();
+                await PaymentRedirect(order);
             }
             else
             {
@@ -52,8 +41,7 @@ public partial class PaymentSelect : ContentPage
 
             if (tempAdapter.ProcessPayment())
             {
-                order.Pay();
-                await NavigateToShowRoom();
+                await PaymentRedirect(order);
             }
             else
             {
@@ -134,14 +122,16 @@ public partial class PaymentSelect : ContentPage
         }
     }
 
-    public static async Task NavigateToShowRoom()
+    public static async Task PaymentRedirect(Order order)
     {
+        order.Pay();
+        await Application.Current.MainPage.DisplayAlert("Payment Success", "Your payment has been processed successfully.", "OK");
         await Application.Current.MainPage.Navigation.PushAsync(new MainPage());
     }
 
     private async void Cancel_Clicked(object sender, EventArgs e)
     {
-        //DisplayAlert("Hey", order.getTotalPrice().ToString(), "Cancel");
+        //PaymentRedirect(order);
         await Navigation.PopAsync();
     }
 }
