@@ -6,7 +6,7 @@
         {
             InitializeComponent();
 
-            MainPage = new Features();
+            MainPage = new VehicleSelect();
         }
     }
 }

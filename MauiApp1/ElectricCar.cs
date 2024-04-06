@@ -1,20 +1,13 @@
-﻿public class ElectricCar : Car
+﻿using System;
+public class ElectricCar : Car
 {
+    private double _batteryPercentage;
     public double BatteryPercentage { get; set; }
-
     public ElectricCar(long vin, string brand, string model, int yearMade, float price) : base(vin, brand, model, yearMade, price)
     {
-        this.BatteryPercentage = 100.0;
-    }
-
-    public double GetBatteryPercentage()
-    {
-        return this.BatteryPercentage;
-    }
-
-    public void SetBatteryPercentage(double batteryPercentage)
-    {
-        this.BatteryPercentage = batteryPercentage;
+        BatteryPercentage = 100.0;
+        _batteryPercentage = BatteryPercentage;
+        ImageSource = "../electric.jpeg";
     }
 
     //TODO: Add featureWrappers

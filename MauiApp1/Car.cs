@@ -2,51 +2,27 @@
 
 public abstract class Car
 {
-    private long vin;
-    private string brand;
-    private string model;
+    private long _vin;
+    public long Vin { get; set; }
+    private string _brand;
+    public string Brand { get; set; }
+    private string _model;
+    public string Model { get; set; }
     private int yearMade;
+    public int YearMade { get; set; }
     private float price;
+    public float Price {  get; set; }
+    public string ImageSource { get; set; }
     private List<FeatureWrapper> featureWrappers;
 
     public Car(long vin, string brand, string model, int yearMade, float price)
     {
-        this.vin = vin;
-        this.brand = brand;
-        this.model = model;
-        this.yearMade = yearMade;
-        this.price = price;
+        this.Vin = vin;
+        this.Brand = brand;
+        this.Model = model;
+        this.YearMade = yearMade;
+        this.Price = price;
         this.featureWrappers = new List<FeatureWrapper>();
-    }
-
-    public long Vin
-    {
-        get { return vin; }
-        set { vin = value; }
-    }
-
-    public string Brand
-    {
-        get { return brand; }
-        set { brand = value; }
-    }
-
-    public string Model
-    {
-        get { return model; }
-        set { model = value; }
-    }
-
-    public int YearMade
-    {
-        get { return yearMade; }
-        set { yearMade = value; }
-    }
-
-    public float Price
-    {
-        get { return price; }
-        set { price = value; }
     }
 
     public float CalculateTax()
