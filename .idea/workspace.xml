@@ -5,14 +5,65 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77e15a20-6eef-482b-8bbf-33cc1499e540" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/IntelliJ_IDEA_GridLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PaymentUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PaymentUI.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/intellij_forms_rt.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/intellij_forms_rt_src.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DesignPatterns.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DesignPatterns.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/CarShowroom.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/CarShowroom.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/Order.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/Order.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/PetrolCar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/PetrolCar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/ShoppingCart.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/ShoppingCart.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/ShoppingCart.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/ShoppingCart.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/ShoppingCartViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/ShoppingCartViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/bin/Debug/net8.0-windows10.0.19041.0/win10-x64/AppX/CarShowroom.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/bin/Debug/net8.0-windows10.0.19041.0/win10-x64/AppX/CarShowroom.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/bin/Debug/net8.0-windows10.0.19041.0/win10-x64/AppX/CarShowroom.exe" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/bin/Debug/net8.0-windows10.0.19041.0/win10-x64/AppX/CarShowroom.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/bin/Debug/net8.0-windows10.0.19041.0/win10-x64/AppX/vs.appxrecipe" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/bin/Debug/net8.0-windows10.0.19041.0/win10-x64/AppX/vs.appxrecipe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/bin/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.build.appxrecipe" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/bin/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.build.appxrecipe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/bin/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/bin/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/bin/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.exe" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/bin/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/bin/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/bin/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/CarShowroom.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/CarShowroom.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/CarShowroom.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/CarShowroom.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-android/CarShowroom.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-android/CarShowroom.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-android/CarShowroom.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-android/CarShowroom.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-android/CarShowroom.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-android/CarShowroom.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-android/CarShowroom.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-android/CarShowroom.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-android/CarShowroom.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-android/CarShowroom.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-android/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-android/R.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-android/_Microsoft.Android.Resource.Designer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-android/_Microsoft.Android.Resource.Designer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-android/case_map.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-android/case_map.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-android/designtime/build.props" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-android/designtime/build.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-android/designtime/libraryprojectimports.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-android/designtime/libraryprojectimports.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-ios/iossimulator-x64/CarShowroom.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-ios/iossimulator-x64/CarShowroom.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-ios/iossimulator-x64/CarShowroom.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-ios/iossimulator-x64/CarShowroom.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-ios/iossimulator-x64/CarShowroom.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-ios/iossimulator-x64/CarShowroom.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-ios/iossimulator-x64/CarShowroom.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-ios/iossimulator-x64/CarShowroom.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-ios/iossimulator-x64/CarShowroom.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-ios/iossimulator-x64/CarShowroom.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/CarShowroom.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/CarShowroom.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/CarShowroom.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/CarShowroom.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/CarShowroom.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/CarShowroom.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/CarShowroom.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/CarShowroom.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/CarShowroom.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/CarShowroom.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/CarShowroom.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/Platforms/Windows/App.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/Platforms/Windows/App.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/Platforms/Windows/App.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/Platforms/Windows/App.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/ProjectArchitectures.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/ProjectArchitectures.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/XamlSaveStateFile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/XamlSaveStateFile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/intermediatexaml/CarShowroom.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/intermediatexaml/CarShowroom.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/intermediatexaml/CarShowroom.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/intermediatexaml/CarShowroom.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/pri.resfiles" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/pri.resfiles" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/pri.resfiles.intermediate" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/pri.resfiles.intermediate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/ref/CarShowroom.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/ref/CarShowroom.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/refint/CarShowroom.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/refint/CarShowroom.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiApp1/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MauiApp1/obj/project.nuget.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,10 +145,22 @@
       <workItem from="1711465194851" duration="327000" />
       <workItem from="1711638463515" duration="380000" />
       <workItem from="1711638857907" duration="5481000" />
+      <workItem from="1712362559648" duration="53000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
