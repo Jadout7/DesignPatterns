@@ -39,7 +39,3 @@ _______________________________________________________
 
 
 _______________________________________________________
-
-## Class Diagram
-
-![Car Showroom Class Diagram](CarShowroomClassDiagram.png)
