@@ -31,7 +31,7 @@ namespace MauiApp1
 
         private void InitializeFeatureGroups()
         {
-            ICar car = new PetrolCar(123456, "Tesla", "Model S", 2022, 100000);
+            ICar car = new PetrolCar(123456, "Tesla", "Model S", 2022, 100000, 2000, "E90");
             var featureGroups = new List<FeatureGroup>
             {
                 new FeatureGroup("Spoilers", new List<FeatureWrapper>

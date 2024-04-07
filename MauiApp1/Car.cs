@@ -1,90 +1,48 @@
-﻿
-using System;
-
-public abstract class Car : ICar
+﻿public abstract class Car : ICar
 {
-    public long Vin { get; set; }
+    public long Vin;
+    public string Brand;
+    public string Model;
+    public int YearMade;
+    public float Price;
+    public float Tax;
+    public string ImageSource;
 
-    public string Brand { get; set; }
-
-    public string Model { get; set; }
-
-    public int YearMade { get; set; }
-
-    public float Price { get; set; }
-    private List<FeatureWrapper> featureWrappers;
-
-    public Car(long vin, string brand, string model, int yearMade, float price)
+    public virtual long GetVin()
     {
-        this.Vin = vin;
-        this.Brand = brand;
-        this.Model = model;
-        this.YearMade = yearMade;
-        this.Price = price;
+        return Vin;
     }
 
-    public float CalculateTax()
+    public virtual string GetBrand()
     {
-        // Calculation logic for tax
-        return 0;
+        return Brand;
     }
 
-    public void RemoveFeature(FeatureWrapper feature)
+    public virtual string GetModel()
     {
-        featureWrappers.Remove(feature);
+        return Model;
     }
 
-    public float GetPriceWithTax()
+    public virtual int GetYearMade()
     {
-        return Price + CalculateTax();
+        return YearMade;
     }
 
-    public long GetVin()
+    public virtual float GetPrice()
     {
-        throw new NotImplementedException();
+        return Price;
     }
 
-    public string GetBrand()
+    public virtual float GetTax()
     {
-        throw new NotImplementedException();
+        return Tax;
     }
 
-    public string GetModel()
+    public virtual string GetImageSource()
     {
-        throw new NotImplementedException();
+        string sanitizedModel = Model.Replace(" ", "_").ToLower();
+        return $"../{sanitizedModel.Replace("-", "_")}.jpg";
     }
 
-    public int GetYearMade()
-    {
-        throw new NotImplementedException();
-    }
-
-    public float GetPrice()
-    {
-        throw new NotImplementedException();
-    }
-
-    public float GetTax()
-    {
-        throw new NotImplementedException();
-    }
-
-    public string GetImageSource()
-    {
-        throw new NotImplementedException();
-    }
-
-    public float GetTotalPrice()
-    {
-        throw new NotImplementedException();
-    }
-
-    public string ImageSource
-    {
-        get
-        {
-            string sanitizedModel = Model.Replace(" ", "_").ToLower();
-            return $"../{sanitizedModel.Replace("-", "_")}.jpg";
-        }
-    }
+    public abstract float GetTotalPrice();
 }

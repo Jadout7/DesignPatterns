@@ -13,4 +13,14 @@
     {
         return SpoilerFeaturePrice;
     }
+
+    public override float GetTax()
+    {
+        return SpoilerFeatureTax;
+    }
+
+    public override float GetTotalPrice()
+    {
+        return base.GetPrice() + GetPrice() + base.GetTax() + GetTax();
+    }
 }
