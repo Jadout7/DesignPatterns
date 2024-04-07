@@ -3,20 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.PaymentSelect"
              Title="PaymentSelect"
-             Padding="20">
+             Padding="20"
+             BackgroundColor="#262728">
     <StackLayout Margin="20" HorizontalOptions="Center" Spacing="20">
         <Label Text="Payment Details" FontSize="Title" TextColor="White"/>
         <StackLayout Orientation="Horizontal">
             <Button Text="Credit Card" WidthRequest="200" Clicked="CreditCardButton" x:Name="CreditCard"  BackgroundColor="#1A4734" Margin="10,0,10,20" TextColor="White"/>
-            <Button Text="Ideal" WidthRequest="200" Clicked="IdealButton" x:Name="Ideal" BackgroundColor="#870903"  Margin="10,0,10,20" TextColor="White"/>
+            <Button Text="Ideal" WidthRequest="200" Clicked="IdealButton" x:Name="Ideal" BackgroundColor="#870903" Margin="10,0,10,20" TextColor="White"/>
         </StackLayout>
         <Entry TextColor="White" Placeholder="Cardholder name" x:Name="CardHolderName"/>
         <Entry TextColor="White" Placeholder="Card number" x:Name="CardNumber" TextChanged="CardNumber_TextChanged"/>
         <StackLayout Orientation="Horizontal" x:Name="CardInformation">
-            <Entry Placeholder="MM/YYYY" x:Name="ExpirationDate" WidthRequest="80" TextChanged="ExpirationDate_TextChanged"/>
-            <Entry Placeholder="CVC" x:Name="CVC" WidthRequest="60" TextChanged="CVC_TextChanged"/>
+            <Entry TextColor="White" Placeholder="MM/YYYY" x:Name="ExpirationDate" WidthRequest="80" TextChanged="ExpirationDate_TextChanged"/>
+            <Entry TextColor="White" Placeholder="CVC" x:Name="CVC" WidthRequest="60" TextChanged="CVC_TextChanged"/>
         </StackLayout>
-        <Picker Title="Select a Bank" x:Name="IdealBank" IsVisible="False">
+        <Picker TextColor="White" Title="Select a Bank" x:Name="IdealBank" IsVisible="False">
             <Picker.Items>
                 <x:String>ABN AMRO</x:String>
                 <x:String>ASN Bank</x:String>
@@ -31,10 +32,10 @@
                 <x:String>Van Lanschot</x:String>
             </Picker.Items>
         </Picker>
-        <Entry Placeholder="IBAN" IsVisible="False" x:Name="Iban"/>
-        <Entry Placeholder="Account holder name"  IsVisible="False" x:Name="AccountHolderName"/>
+        <Entry TextColor="White" Placeholder="IBAN" IsVisible="False" x:Name="Iban"/>
+        <Entry TextColor="White" Placeholder="Account holder name"  IsVisible="False" x:Name="AccountHolderName"/>
         <Line X1="0" Y1="0" X2=" 400" Y2="0" Stroke="Black" StrokeThickness="2" HorizontalOptions="Center"/>
-        <Button Text="Pay" Clicked="Button_Clicked" x:Name="Pay"/>
-        <Button Text="Cancel" x:Name="Cancel" Clicked="Cancel_Clicked"/>
+        <Button TextColor="#E4E6EB" BackgroundColor="#454545" Text="Pay" Clicked="Button_Clicked" x:Name="Pay"/>
+        <Button TextColor="#E4E6EB" BackgroundColor="#454545" Text="Cancel" x:Name="Cancel" Clicked="Cancel_Clicked"/>
     </StackLayout>
 </ContentPage>

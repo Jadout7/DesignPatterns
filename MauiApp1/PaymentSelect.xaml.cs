@@ -18,12 +18,28 @@ public partial class PaymentSelect : ContentPage
     {
         if (isCreditCard)
         {
-            long tempCardNumber = long.Parse(CardNumber.Text);
-            int tempCVC = int.Parse(CVC.Text);
-            int tempMonth  = int.Parse(ExpirationDate.Text.Substring(0, 2));
-            int tempYear  = int.Parse(ExpirationDate.Text.Substring(3, 4)); //+1 position because of the "/"
-            DateTime  tempExpirationDate = new DateTime(tempYear, tempMonth, 01);
-            CreditCard tempCard = new CreditCard(tempCardNumber,tempCVC,CardHolderName.Text, tempExpirationDate);
+            // Check if any of the fields are empty
+            if (string.IsNullOrWhiteSpace(CardNumber.Text) || string.IsNullOrWhiteSpace(CVC.Text) ||
+                string.IsNullOrWhiteSpace(ExpirationDate.Text) || string.IsNullOrWhiteSpace(CardHolderName.Text))
+            {
+                DisplayAlert("PaymentError", "One or more fields are empty", "OK");
+                return;
+            }
+
+            // Proceed with credit card processing
+            long tempCardNumber;
+            int tempCVC, tempMonth, tempYear;
+
+            if (!long.TryParse(CardNumber.Text, out tempCardNumber) || !int.TryParse(CVC.Text, out tempCVC) ||
+                !int.TryParse(ExpirationDate.Text.Substring(0, 2), out tempMonth) ||
+                !int.TryParse(ExpirationDate.Text.Substring(3, 4), out tempYear))
+            {
+                DisplayAlert("PaymentError", "One or more entries incorrect", "OK");
+                return;
+            }
+
+            DateTime tempExpirationDate = new DateTime(tempYear, tempMonth, 1);
+            CreditCard tempCard = new CreditCard(tempCardNumber, tempCVC, CardHolderName.Text, tempExpirationDate);
 
             if (tempCard.ProcessPayment())
             {
@@ -31,13 +47,20 @@ public partial class PaymentSelect : ContentPage
             }
             else
             {
-                DisplayAlert("PaymentError", "One or more entries incorrect", "OK");
+                DisplayAlert("PaymentError", "Payment processing failed", "OK");
             }
-        } 
-        else 
-        { 
-            string tempBankName = IdealBank.SelectedItem.ToString();
-            IDeal tempIdeal = new IDeal(Iban.Text, tempBankName, AccountHolderName.Text);
+        }
+        else
+        {
+            // Check if any of the fields are empty
+            if (string.IsNullOrWhiteSpace(Iban.Text) || IdealBank.SelectedItem == null || string.IsNullOrWhiteSpace(AccountHolderName.Text))
+            {
+                DisplayAlert("PaymentError", "One or more fields are empty", "OK");
+                return;
+            }
+
+            // Proceed with iDeal processing
+            IDeal tempIdeal = new IDeal(Iban.Text, IdealBank.SelectedItem.ToString(), AccountHolderName.Text);
             GatewayAdapter tempAdapter = new GatewayAdapter(tempIdeal);
 
             if (tempAdapter.ProcessPayment())
@@ -46,10 +69,11 @@ public partial class PaymentSelect : ContentPage
             }
             else
             {
-                DisplayAlert("PaymentError", "One or more entries incorrect", "OK");
+                DisplayAlert("PaymentError", "Payment processing failed", "OK");
             }
         }
     }
+
 
     private void CreditCardButton(object sender, EventArgs e)
     {
