@@ -5,7 +5,7 @@ public static class CarFactory
     private static int tankPressure { get; set; }
     private static string fuelType { get; set; }
 
-    public static Car CreateCar(string carType, string brand, string model, long vin, int yearMade, float price, float tax)
+    public static ICar CreateCar(string carType, string brand, string model, long vin, int yearMade, float price, float tax)
     {
         switch (carType.ToLower())
         {

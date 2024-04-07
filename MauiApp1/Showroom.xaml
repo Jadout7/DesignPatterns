@@ -7,7 +7,6 @@
     <ContentPage.BindingContext>
         <vm:ShowroomViewModel/>
     </ContentPage.BindingContext>
-
     <ScrollView>
         <VerticalStackLayout BackgroundColor="Grey">
 

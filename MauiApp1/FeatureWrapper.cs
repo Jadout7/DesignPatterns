@@ -1,4 +1,4 @@
-﻿public class FeatureWrapper : IFeature
+﻿public class FeatureWrapper : ICar
 {
     private readonly ICar Car;
 
