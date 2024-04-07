@@ -9,12 +9,4 @@ public class HydrogenCar : Car
         HydrogenTankPercentage = 100.0;
         _hydrogenTankPercentage = HydrogenTankPercentage;
     }
-
-    //TODO: Add FeatureWrappers
-
-    //public override float CalculateTax()
-    //{
-    //    // Implement tax calculation for hydrogen cars
-    //    return 0;
-    //}
 }

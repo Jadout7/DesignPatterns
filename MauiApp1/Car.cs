@@ -11,7 +11,6 @@ public abstract class Car
     public int YearMade { get; set; }
 
     public float Price {  get; set; }
-    private List<FeatureWrapper> featureWrappers;
 
     public Car(long vin, string brand, string model, int yearMade, float price)
     {
@@ -20,24 +19,12 @@ public abstract class Car
         this.Model = model;
         this.YearMade = yearMade;
         this.Price = price;
-        this.featureWrappers = new List<FeatureWrapper>();
     }
 
     public float CalculateTax()
     {
         // Calculation logic for tax
         return 0;
-    }
-
-    public void AddFeature(FeatureWrapper feature)
-    {
-        featureWrappers.Add(feature);
-        feature.Car = this;
-    }
-
-    public void RemoveFeature(FeatureWrapper feature)
-    {
-        featureWrappers.Remove(feature);
     }
 
     public float GetPriceWithTax()

@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-public class Order
+﻿public class Order
 {
     private static Order instance;
 
@@ -23,6 +21,11 @@ public class Order
         Cars = new List<Car>();
     }
 
+    public void AddCar(Car car)
+    {
+        Cars.Add(car);
+    }
+
     public void Pay()
     {
         Cars.Clear();
@@ -33,7 +36,7 @@ public class Order
         float totalPrice = 0;
         foreach (Car car in Cars)
         {
-            totalPrice += car.Price;
+            totalPrice += car.GetPriceWithTax();
         }
         return totalPrice;
     }
