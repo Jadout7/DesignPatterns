@@ -18,10 +18,10 @@
                         <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
                             <StackLayout Orientation="Vertical" Spacing="8">
                                 <Line X1="0" Y1="0" X2=" 400" Y2="0" Stroke="Black" StrokeThickness="2" HorizontalOptions="Center"></Line>
-                                <Label Text="{Binding Brand, StringFormat='Brand: {0}'}"/>
-                                <Label Text="{Binding Model, StringFormat='Model: {0}'}"/>
-                                <Label Text="{Binding YearMade, StringFormat='Year: {0}'}"/>
-                                <Label Text="{Binding Price, StringFormat='Cost: {0:C}'}" Margin="0,0,0,10"/>
+                                <Label Text="{Binding Cars.Brand, StringFormat='Brand: {0}'}"/>
+                                <Label Text="{Binding Cars.Model, StringFormat='Model: {0}'}"/>
+                                <Label Text="{Binding Cars.YearMade, StringFormat='Year: {0}'}"/>
+                                <Label Text="{Binding Cars.Price, StringFormat='Cost: {0:C}'}" Margin="0,0,0,10"/>
                             </StackLayout>
                         </StackLayout>
                     </ViewCell>

@@ -16,6 +16,7 @@ public partial class HeaderView : ContentView
     void OnFeaturesClicked(object sender, EventArgs e)
     {
         //Navigate to Feature Selection page
+
         Application.Current.MainPage = new Features();
     }
 

@@ -5,7 +5,5 @@
     string GetModel();
     int GetYearMade();
     float GetPrice();
-    float GetTax();
     string GetImageSource();
-    float GetTotalPrice();
 }

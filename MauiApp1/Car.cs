@@ -5,8 +5,15 @@
     public string Model;
     public int YearMade;
     public float Price;
-    public float Tax;
-    public string ImageSource;
+
+    public Car(long vin, string brand, string model, int yearMade, float price)
+    {
+        Vin = vin;
+        Brand = brand;
+        Model = model;
+        YearMade = yearMade;
+        Price = price;
+    }
 
     public virtual long GetVin()
     {
@@ -33,16 +40,9 @@
         return Price;
     }
 
-    public virtual float GetTax()
-    {
-        return Tax;
-    }
-
     public virtual string GetImageSource()
     {
         string sanitizedModel = Model.Replace(" ", "_").ToLower();
         return $"../{sanitizedModel.Replace("-", "_")}.jpg";
     }
-
-    public abstract float GetTotalPrice();
 }

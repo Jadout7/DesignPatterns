@@ -32,17 +32,8 @@
         return Car.GetPrice();
     }
 
-    public virtual float GetTax()
-    {
-        return Car.GetTax();
-    }
-
     public string GetImageSource()
     {
         return Car.GetImageSource();
-    }
-    public virtual float GetTotalPrice()
-    {
-        return Car.GetTotalPrice();
     }
 }

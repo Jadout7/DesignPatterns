@@ -20,26 +20,27 @@ public partial class Features : ContentPage
         if (featureWrapper != null)
         {
             DisplayAlert("Feature Details", $"VIN: {featureWrapper.GetVin()}\n" +
-                $"Total Price: {featureWrapper.GetTotalPrice()}\n" +
                 $"Brand: {featureWrapper.GetBrand()}\n" +
                 $"Model: {featureWrapper.GetModel()}\n" +
                 $"Year Made: {featureWrapper.GetYearMade()}\n" +
-                $"Feature Price: {featureWrapper.GetPrice()}\n" +
-                $"Feature Tax: {featureWrapper.GetTax()}\n"
+                $"Feature Price: {featureWrapper.GetPrice()}\n"
                 , "OK");
         }
     }
 
-    void OnAddClicked(object sender, EventArgs e)
+    private void OnAddClicked(object sender, EventArgs e)
     {
-        // Add the feature to the cart
-        // This will depend on your implementation
+        var featureWrapper = (sender as Button)?.BindingContext as FeatureWrapper;
+
+        Order.Instance.AddFeature(featureWrapper);
+
+        string message = $"Feature added to order!\nTotal Price: {Order.Instance.GetTotalPrice():C}";
+        DisplayAlert("Order Confirmation", message, "OK");
     }
 
     void OnContinueClicked(object sender, EventArgs e)
     {
         Application.Current.MainPage = new PaymentSelect();
-        // Application.Current.MainPage = new Features(car);
     }
 
 
