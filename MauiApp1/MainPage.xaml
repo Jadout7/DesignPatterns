@@ -36,7 +36,6 @@
                 <Button
                      x:Name="ContinueBtn"
                      Text="Continue"
-                     Clicked="OnContinueClicked"
                      HorizontalOptions="EndAndExpand" 
                      VerticalOptions="End"  
                 />

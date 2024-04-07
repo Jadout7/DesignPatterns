@@ -8,7 +8,7 @@ public class Exhaust : CarDecorator
 {
     public Exhaust(Car car) : base(car)
     {
-        Price = 500;
+        Price += 500;
     }
 }
 

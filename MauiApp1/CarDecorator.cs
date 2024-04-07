@@ -12,14 +12,4 @@ public abstract class CarDecorator : Car
     {
         _car = car;
     }
-
-    public float GetPriceWithTaxFromBase()
-    {
-        return _car.GetPriceWithTax();
-    }
-
-    public string ImageSourceFromBase
-    {
-        get { return _car.ImageSource; }
-    }
 }

@@ -13,12 +13,6 @@ public partial class HeaderView : ContentView
         Application.Current.MainPage = new Showroom();
     }
 
-    void OnFeaturesClicked(object sender, EventArgs e)
-    {
-        //Navigate to Feature Selection page
-        Application.Current.MainPage = new Features();
-    }
-
     void OnCartClicked(object sender, EventArgs e)
     {
         // Navigate to the cart page

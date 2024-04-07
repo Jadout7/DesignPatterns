@@ -8,7 +8,7 @@ public class SportsTires : CarDecorator
 {
     public SportsTires(Car car) : base(car)
     {
-        Price = 500; 
+        Price += 800; 
     }
 }
 
