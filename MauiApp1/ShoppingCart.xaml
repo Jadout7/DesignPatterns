@@ -4,24 +4,25 @@
              x:Class="MauiApp1.ShoppingCart"
              xmlns:vm="clr-namespace:MauiApp1"
              Title="ShoppingCart"
-             Padding="20">
+             Padding="20"
+             BackgroundColor="#262728">
 
     <ContentPage.BindingContext>
         <vm:ShoppingCartViewModel />
     </ContentPage.BindingContext>
-    <StackLayout Margin="20" HorizontalOptions="Center" Spacing="20">
-        <Label Text="Shopping Cart" FontSize="Title" HorizontalOptions="Center"/>
-        <ListView ItemsSource="{Binding Order.Cars}" HorizontalOptions="Center">
+    <StackLayout Margin="20" HorizontalOptions="Center" Spacing="20" >
+        <Label Text="Shopping Cart" FontSize="Title" HorizontalOptions="Center" TextColor="White"/>
+        <ListView ItemsSource="{Binding Order.Cars}" HorizontalOptions="Center" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
-                            <StackLayout Orientation="Vertical" Spacing="8">
+                            <StackLayout Orientation="Vertical" Spacing="8" >
                                 <Line X1="0" Y1="0" X2=" 400" Y2="0" Stroke="Black" StrokeThickness="2" HorizontalOptions="Center"></Line>
-                                <Label Text="{Binding Brand, StringFormat='Brand: {0}'}"/>
-                                <Label Text="{Binding Model, StringFormat='Model: {0}'}"/>
-                                <Label Text="{Binding YearMade, StringFormat='Year: {0}'}"/>
-                                <Label Text="{Binding Price, StringFormat='Cost: {0:C}'}" Margin="0,0,0,10"/>
+                                <Label TextColor="White" Text="{Binding Brand, StringFormat='Brand: {0}'}"/>
+                                <Label TextColor="White" Text="{Binding Model, StringFormat='Model: {0}'}" />
+                                <Label TextColor="White" Text="{Binding YearMade, StringFormat='Year: {0}'}"/>
+                                <Label TextColor="White" Text="{Binding Price, StringFormat='Cost: {0:C}'}" Margin="0,0,0,10" />
                             </StackLayout>
                         </StackLayout>
                     </ViewCell>
@@ -29,9 +30,9 @@
             </ListView.ItemTemplate>
         </ListView>
         <Line X1="0" Y1="0" X2=" 400" Y2="0" Stroke="Black" StrokeThickness="2" HorizontalOptions="Center"/>
-        <Label Text="{Binding TotalPrice, StringFormat='Total Price: {0:C}'}" HorizontalOptions="Center"/>
-        <Button Text="Payment" x:Name="ToPayment" Clicked="ToPayment_Clicked"/>
-        <Button Text="Back to Showroom" x:Name="CancelCart" Clicked="CancelCart_Clicked"/>
+        <Label TextColor="White" Text="{Binding TotalPrice, StringFormat='Total Price: {0:C}'}" HorizontalOptions="Center"/>
+        <Button BackgroundColor="#454545" TextColor="#E4E6EB" Text="Payment" x:Name="ToPayment" Clicked="ToPayment_Clicked"/>
+        <Button BackgroundColor="#454545" TextColor="#E4E6EB" Text="Back to Showroom" x:Name="CancelCart" Clicked="CancelCart_Clicked"/>
     </StackLayout>
 </ContentPage>
 

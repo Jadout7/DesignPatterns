@@ -11,12 +11,12 @@
 
             <local:HeaderView/>
             <Grid>
-                <Label Padding="20,40,20,0" Text="All Features Avaliable" FontSize="36" FontAttributes="Bold" HorizontalOptions="StartAndExpand"/>
+                <Label Padding="20,40,20,0" Text="All Features Avaliable" FontSize="36" FontAttributes="Bold" HorizontalOptions="StartAndExpand" TextColor="#E4E6EB"/>
             </Grid>
             <StackLayout Margin="20, 0, 20, 0">
                 <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                     <!-- Exhaust -->
-                    <StackLayout WidthRequest="350" HeightRequest="350" Margin="50" >
+                    <StackLayout WidthRequest="350" HeightRequest="350" Margin="50,50,120,50" >
                         <Image Source="../spoiler.png" HeightRequest="250" />
                         <Label Text="Exhaust" FontSize="Medium" TextColor="White"/>
                         <Label Text="Price: €500" FontSize="Small" TextColor="White"/>
@@ -24,7 +24,7 @@
                         <BoxView HeightRequest="1" HorizontalOptions="FillAndExpand" />
                     </StackLayout>
                     <!-- SportsTires -->
-                    <StackLayout WidthRequest="350" HeightRequest="350" Margin="50">
+                    <StackLayout WidthRequest="350" HeightRequest="350" Margin="120,50,50,50">
                         <Image Source="../spoiler.png" HeightRequest="250"/>
                         <Label Text="Sports Tires" FontSize="Medium" TextColor="White"/>
                         <Label Text="Price: €800" FontSize="Small" TextColor="White" />
@@ -34,7 +34,7 @@
                 </HorizontalStackLayout>
                 <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                     <!-- Spoiler -->
-                    <StackLayout WidthRequest="350" HeightRequest="350" Margin="50">
+                    <StackLayout WidthRequest="350" HeightRequest="350" Margin="50,50,120,50">
                         <Image Source="../spoiler.png" HeightRequest="250" />
                         <Label Text="Spoiler" FontSize="Medium" TextColor="White"/>
                         <Label Text="Price: €300" FontSize="Small" TextColor="White"/>
@@ -42,7 +42,7 @@
                         <BoxView HeightRequest="1"  HorizontalOptions="FillAndExpand" />
                     </StackLayout>
                     <!-- Underglow -->
-                    <StackLayout WidthRequest="350" HeightRequest="350" Margin="50">
+                    <StackLayout WidthRequest="350" HeightRequest="350" Margin="120,50,50,50">
                         <Image Source="../spoiler.png" HeightRequest="250" />
                         <Label Text="Underglow" FontSize="Medium" TextColor="White"/>
                         <Label Text="Price: €100" FontSize="Small" TextColor="White" />

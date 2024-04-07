@@ -5,13 +5,13 @@
              Title="PaymentSelect"
              Padding="20">
     <StackLayout Margin="20" HorizontalOptions="Center" Spacing="20">
-        <Label Text="Payment Details" FontSize="Title"/>
+        <Label Text="Payment Details" FontSize="Title" TextColor="White"/>
         <StackLayout Orientation="Horizontal">
             <Button Text="Credit Card" WidthRequest="200" Clicked="CreditCardButton" x:Name="CreditCard"  BackgroundColor="#1A4734" Margin="10,0,10,20" TextColor="White"/>
             <Button Text="Ideal" WidthRequest="200" Clicked="IdealButton" x:Name="Ideal" BackgroundColor="#870903"  Margin="10,0,10,20" TextColor="White"/>
         </StackLayout>
-        <Entry Placeholder="Cardholder name" x:Name="CardHolderName"/>
-        <Entry Placeholder="Card number" x:Name="CardNumber" TextChanged="CardNumber_TextChanged"/>
+        <Entry TextColor="White" Placeholder="Cardholder name" x:Name="CardHolderName"/>
+        <Entry TextColor="White" Placeholder="Card number" x:Name="CardNumber" TextChanged="CardNumber_TextChanged"/>
         <StackLayout Orientation="Horizontal" x:Name="CardInformation">
             <Entry Placeholder="MM/YYYY" x:Name="ExpirationDate" WidthRequest="80" TextChanged="ExpirationDate_TextChanged"/>
             <Entry Placeholder="CVC" x:Name="CVC" WidthRequest="60" TextChanged="CVC_TextChanged"/>

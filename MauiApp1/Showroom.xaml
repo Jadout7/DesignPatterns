@@ -24,7 +24,7 @@
                     </BindableLayout.ItemsSource>
                     <BindableLayout.ItemTemplate>
                         <DataTemplate>
-                            <StackLayout WidthRequest="550" HeightRequest="450" Margin="5">
+                            <StackLayout WidthRequest="350" HeightRequest="350" Margin="5">
                                 <Image Source="{Binding ImageSource}" Aspect="AspectFit" />
                                 <Label FontSize="Medium" TextColor="White">
                                     <Label.Text>
