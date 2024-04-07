@@ -7,35 +7,62 @@
              Title="Features">
 
     <ScrollView>
-        <VerticalStackLayout BackgroundColor="Beige">
-        
+        <VerticalStackLayout BackgroundColor="Gray">
+
             <local:HeaderView/>
 
+            <!-- Title -->
             <Grid>
                 <Label Padding="20,40,20,30" Text="ALL FEATURES" FontSize="45" FontAttributes="Italic" FontFamily="Verdana" HorizontalOptions="StartAndExpand"/>
             </Grid>
 
             <!-- Feature list -->
-            <StackLayout BindableLayout.ItemsSource="{Binding FeatureWrappers}" Margin="20, 0, 20, 0">
-                <BindableLayout.ItemTemplate>
-                    <DataTemplate>
-                        <Frame Margin="0,0,20,0" WidthRequest="250" HeightRequest="250">
-                            <StackLayout>
-                                <Image Margin="25,0,25,0"  Source="{Binding ImageSource}" Aspect="AspectFill" />
-                                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                                    <Button BackgroundColor="Black" FontSize="Medium" CornerRadius="0" Clicked= "OnViewClicked" Text="View" />
-                                    <Button Margin="2, 0, 0, 0" BackgroundColor="Black" FontSize="Medium" CornerRadius="0" Text="Add" Clicked="OnAddClicked"/>
-                                </StackLayout>
-                            </StackLayout>
-                        </Frame>
-                    </DataTemplate>
-                </BindableLayout.ItemTemplate>
+            <StackLayout Margin="20, 0, 20, 0">
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                    <!-- Exhaust -->
+                    <StackLayout WidthRequest="350" HeightRequest="350" Margin="50">
+                        <Image Source="../spoiler.png" HeightRequest="250" />
+                        <Label Text="Exhaust" FontSize="Medium" />
+                        <Label Text="Price: 500" FontSize="Small"/>
+                        <Button Text="Add to Cart" Clicked="OnAddExhaustClicked" CommandParameter="{Binding .}" />
+                        <BoxView HeightRequest="1" BackgroundColor="Gray" HorizontalOptions="FillAndExpand" Margin="0,5,0,5"/>
+                    </StackLayout>
+                    <!-- SportsTires -->
+                    <StackLayout WidthRequest="350" HeightRequest="350" Margin="50">
+                        <Image Source="../spoiler.png" HeightRequest="250" />
+                        <Label Text="Sports Tires" FontSize="Medium" />
+                        <Label Text="Price: 500" FontSize="Small"/>
+                        <Button Text="Add to Cart" Clicked="OnAddSportTiresClicked" CommandParameter="{Binding .}" />
+                        <BoxView HeightRequest="1" BackgroundColor="Gray" HorizontalOptions="FillAndExpand" Margin="0,5,0,5"/>
+                    </StackLayout>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                    <!-- Spoiler -->
+                    <StackLayout WidthRequest="350" HeightRequest="350" Margin="50">
+                        <Image Source="../spoiler.png" HeightRequest="250" />
+                        <Label Text="Spoiler" FontSize="Medium" />
+                        <Label Text="Price: 500" FontSize="Small"/>
+                        <Button Text="Add to Cart" Clicked="OnAddSpoilerClicked" CommandParameter="{Binding .}" />
+                        <BoxView HeightRequest="1" BackgroundColor="Gray" HorizontalOptions="FillAndExpand" Margin="0,5,0,5"/>
+                    </StackLayout>
+                    <!-- Underglow -->
+                    <StackLayout WidthRequest="350" HeightRequest="350" Margin="50">
+                        <Image Source="../spoiler.png" HeightRequest="250" />
+                        <Label Text="Underglow" FontSize="Medium" />
+                        <Label Text="Price: 500" FontSize="Small"/>
+                        <Button Text="Add to Cart" Clicked="OnAddUnderglowClicked" CommandParameter="{Binding .}" />
+                        <BoxView HeightRequest="1" BackgroundColor="Gray" HorizontalOptions="FillAndExpand" Margin="0,5,0,5"/>
+                    </StackLayout>
+                </HorizontalStackLayout>
+
             </StackLayout>
 
             <!-- Continue button -->
-            <Button Margin="0,35,12,0" HeightRequest="60" BackgroundColor="Black" FontSize="14" Text="CONTINUE SHOPPING" Clicked="OnContinueClicked" HorizontalOptions="EndAndExpand" VerticalOptions="End" />
-        
+            <Button Margin="0,35,12,0" HeightRequest="60" BackgroundColor="Black" FontSize="14" Text="Continue Shopping" Clicked="OnContinueClicked" HorizontalOptions="EndAndExpand" VerticalOptions="End" />
+
+
         </VerticalStackLayout>
     </ScrollView>
-    
+
 </ContentPage>
