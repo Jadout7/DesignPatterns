@@ -21,17 +21,6 @@ public abstract class Car
         this.Price = price;
     }
 
-    public float CalculateTax()
-    {
-        // Calculation logic for tax
-        return 0;
-    }
-
-    public float GetPriceWithTax()
-    {
-        return Price + CalculateTax();
-    }
-
     public string ImageSource
     {
         get {

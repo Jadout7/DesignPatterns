@@ -12,11 +12,7 @@ public partial class Showroom : ContentPage
     {
         var button = (Button)sender;
         var selectedCar = (Car)button.CommandParameter;
-        Order.Instance.Cars.Add(selectedCar);
 
-        float totalPrice = Order.Instance.GetTotalPrice();
-
-        string message = $"Car added to order!\nTotal Price: {totalPrice:C}";
-        DisplayAlert("Order Confirmation", message, "OK");
+        Application.Current.MainPage = new Features(selectedCar);
     }
 }

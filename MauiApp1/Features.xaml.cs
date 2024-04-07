@@ -1,47 +1,58 @@
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
 
 namespace MauiApp1;
 
 public partial class Features : ContentPage
 {
+    Car newCar;
 
-    public Features()
+    public Features(Car selectedCar)
 	{
-		InitializeComponent();
+        newCar = selectedCar;
+        InitializeComponent();
     }
 
-    void OnAddExhaustClicked(object sender, EventArgs e)
+    async void OnAddExhaustClicked(object sender, EventArgs e)
     {
-        // Add the feature to the cart
-        // This will depend on your implementation
-        DisplayAlert("Feature Adding", "Exhaust Added", "OK");
+        Car featureCar = new Exhaust(newCar);
+        Order.Instance.AddCar(featureCar);
+
+        await DisplayAlert("Feature Adding", "Exhaust Added", "OK");
+        Application.Current.MainPage = new ShoppingCart();
     }
 
-    void OnAddSportTiresClicked(object sender, EventArgs e)
+    async void OnAddSportTiresClicked(object sender, EventArgs e)
     {
-        // Add the feature to the cart
-        // This will depend on your implementation
-        DisplayAlert("Feature Adding", "Sport Tires Added", "OK");
+        Car featureCar = new SportsTires(newCar);
+        Order.Instance.AddCar(featureCar);
+
+        await DisplayAlert("Feature Adding", "Sport Tires Added", "OK");
+        Application.Current.MainPage = new ShoppingCart();
     }
 
-    void OnAddSpoilerClicked(object sender, EventArgs e)
+    async void OnAddSpoilerClicked(object sender, EventArgs e)
     {
-        // Add the feature to the cart
-        // This will depend on your implementation
-        DisplayAlert("Feature Adding", "Spoiler Added", "OK");
+        Car featureCar = new Spoiler(newCar);
+        Order.Instance.AddCar(featureCar);
+
+        await DisplayAlert("Feature Adding", "Spoiler Added", "OK");
+        Application.Current.MainPage = new ShoppingCart();
     }
 
-    void OnAddUnderglowClicked(object sender, EventArgs e)
+    async void OnAddUnderglowClicked(object sender, EventArgs e)
     {
-        // Add the feature to the cart
-        // This will depend on your implementation
-        DisplayAlert("Feature Adding", "Underglow Added", "OK");
+        Car featureCar = new Underglow(newCar);
+        Order.Instance.AddCar(featureCar);
+
+        await DisplayAlert("Feature Adding", "Underglow Added", "OK");
+        Application.Current.MainPage = new ShoppingCart();
     }
 
-    void OnContinueClicked(object sender, EventArgs e)
+    async void OnContinueClicked(object sender, EventArgs e)
     {
-        // Navigate to the order page
-        Application.Current.MainPage = new PaymentSelect();
+        Order.Instance.AddCar(newCar);
+
+        await DisplayAlert("Car Adding", "Car Added", "OK");
+        Application.Current.MainPage = new ShoppingCart();
     }
+
 }

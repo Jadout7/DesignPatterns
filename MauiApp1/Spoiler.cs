@@ -8,6 +8,6 @@ public class Spoiler : CarDecorator
 {
     public Spoiler(Car car) : base(car)
     {
-        Price = 300; 
+        Price += 300; 
     }
 }

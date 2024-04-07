@@ -36,7 +36,7 @@
         float totalPrice = 0;
         foreach (Car car in Cars)
         {
-            totalPrice += car.GetPriceWithTax();
+            totalPrice += car.Price;
         }
         return totalPrice;
     }

@@ -8,7 +8,7 @@ public class Underglow : CarDecorator
 {
     public Underglow(Car car) : base(car)
     {
-        Price = 100;
+        Price += 100;
     }
 }
 
