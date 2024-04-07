@@ -4,6 +4,10 @@ namespace MauiApp1;
 public partial class PaymentSelect : ContentPage
 {
     private bool isCreditCard = true;
+
+    private string notSelected = "#870903";
+    private string selected = "#1A4734";
+
     public PaymentSelect()
 	{
 		InitializeComponent();
@@ -49,8 +53,8 @@ public partial class PaymentSelect : ContentPage
 
     private void CreditCardButton(object sender, EventArgs e)
     {
-        CreditCard.BackgroundColor = Color.FromArgb("FF5959");
-        Ideal.BackgroundColor = Color.FromArgb("#ADDFFF");
+        CreditCard.BackgroundColor = Color.FromArgb(selected);
+        Ideal.BackgroundColor = Color.FromArgb(notSelected);
 
         CardNumber.IsVisible = true;
         CardInformation.IsVisible = true;
@@ -66,8 +70,8 @@ public partial class PaymentSelect : ContentPage
 
     private void IdealButton(object sender, EventArgs e)
     {
-        Ideal.BackgroundColor = Color.FromArgb("FF5959");
-        CreditCard.BackgroundColor = Color.FromArgb("#ADDFFF");
+        Ideal.BackgroundColor = Color.FromArgb(selected);
+        CreditCard.BackgroundColor = Color.FromArgb(notSelected);
 
         CardNumber.IsVisible = false;
         CardInformation.IsVisible = false;

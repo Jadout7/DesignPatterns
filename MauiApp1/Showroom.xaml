@@ -14,19 +14,19 @@
             <local:HeaderView/>
 
             <Grid>
-                <Label Padding="20,40,20,0" Text="All Cars" FontSize="36" FontAttributes="Bold" HorizontalOptions="StartAndExpand" />
+                <Label Padding="20,40,20,0" Text="All Cars" FontSize="36" FontAttributes="Bold" HorizontalOptions="StartAndExpand" TextColor="White"/>
             </Grid>
             <StackLayout>
-                <Label Text="In Stock" FontSize="Large" HorizontalOptions="Center" Margin="0,0,0,20"/>
+                <Label Text="In Stock" FontSize="Large" HorizontalOptions="Center" Margin="0,0,0,20" TextColor="White"/>
                 <FlexLayout Wrap="Wrap" JustifyContent="SpaceAround">
                     <BindableLayout.ItemsSource>
-                        <Binding Path="Cars" />
+                        <Binding Path="Cars"/>
                     </BindableLayout.ItemsSource>
                     <BindableLayout.ItemTemplate>
                         <DataTemplate>
                             <StackLayout WidthRequest="550" HeightRequest="450" Margin="5">
                                 <Image Source="{Binding ImageSource}" Aspect="AspectFit" />
-                                <Label FontSize="Medium">
+                                <Label FontSize="Medium" TextColor="White">
                                     <Label.Text>
                                         <MultiBinding StringFormat="{}{0} {1} {2}">
                                             <Binding Path="Brand"/>
@@ -35,7 +35,7 @@
                                         </MultiBinding>
                                     </Label.Text>
                                 </Label>
-                                <Label Text="{Binding Price, StringFormat='Price: {0:C}'}" FontSize="Small" Margin="0,0,0,8"/>
+                                <Label Text="{Binding Price, StringFormat='Price: {0:C}'}" FontSize="Small" Margin="0,0,0,8" TextColor="White"/>
                                 <Button Text="Add to Cart" Clicked="AddToList_Clicked" CommandParameter="{Binding .}" BackgroundColor="#454545" TextColor="#E4E6EB" FontSize="Micro"/>
                                 <BoxView HeightRequest="1" BackgroundColor="#242526" HorizontalOptions="FillAndExpand" Margin="0,5,0,5"/>
                             </StackLayout>

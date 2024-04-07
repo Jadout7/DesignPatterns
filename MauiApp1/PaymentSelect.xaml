@@ -7,8 +7,8 @@
     <StackLayout Margin="20" HorizontalOptions="Center" Spacing="20">
         <Label Text="Payment Details" FontSize="Title"/>
         <StackLayout Orientation="Horizontal">
-            <Button Text="Credit Card" WidthRequest="200" Clicked="CreditCardButton" x:Name="CreditCard"  BackgroundColor="#FF5959" Margin="10,0,10,20"/>
-            <Button Text="Ideal" WidthRequest="200" Clicked="IdealButton" x:Name="Ideal" BackgroundColor="#ADDFFF"  Margin="10,0,10,20"/>
+            <Button Text="Credit Card" WidthRequest="200" Clicked="CreditCardButton" x:Name="CreditCard"  BackgroundColor="#1A4734" Margin="10,0,10,20" TextColor="White"/>
+            <Button Text="Ideal" WidthRequest="200" Clicked="IdealButton" x:Name="Ideal" BackgroundColor="#870903"  Margin="10,0,10,20" TextColor="White"/>
         </StackLayout>
         <Entry Placeholder="Cardholder name" x:Name="CardHolderName"/>
         <Entry Placeholder="Card number" x:Name="CardNumber" TextChanged="CardNumber_TextChanged"/>

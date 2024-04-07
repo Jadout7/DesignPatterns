@@ -3,14 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.HeaderView">
     <ContentView.Content>
-        <Grid BackgroundColor="#141414"  HeightRequest="100">
+        <Grid BackgroundColor="#18191A"  HeightRequest="100">
             <Image Source="../logo.png" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="StartAndExpand" Margin="20,0,0,0"/>
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
                 <Label Text="Clown Car Central" TextColor="White" FontSize="42" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
             </StackLayout>
             <StackLayout Margin="0,0,0,0" Orientation="Horizontal" HorizontalOptions="EndAndExpand">
-                <Button WidthRequest="135.2" BackgroundColor="#141414" FontSize="Medium" CornerRadius="0" TextColor="White" Text="Vehicles" Clicked="OnVehiclesClicked"/>
-                <Button WidthRequest="135.2" BackgroundColor="#141414" Margin="0, 0, 0, 0"  FontSize="Medium" CornerRadius="0" TextColor="White" Text="Cart" Clicked="OnCartClicked" />
+                <Button WidthRequest="135.2" BackgroundColor="#18191A" FontSize="Medium" CornerRadius="0" TextColor="White" Text="Vehicles" Clicked="OnVehiclesClicked"/>
+                <Button WidthRequest="135.2" BackgroundColor="#18191A" Margin="0, 0, 0, 0"  FontSize="Medium" CornerRadius="0" TextColor="White" Text="Cart" Clicked="OnCartClicked" />
             </StackLayout>
         </Grid>
     </ContentView.Content>
