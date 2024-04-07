@@ -13,14 +13,4 @@
     {
         return TireFeaturePrice;
     }
-
-    public override float GetTax()
-    {
-        return TireFeatureTax;
-    }
-
-    public override float GetTotalPrice()
-    {
-        return base.GetPrice() + GetPrice() + base.GetTax() + GetTax();
-    }
 }

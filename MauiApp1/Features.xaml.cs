@@ -24,8 +24,8 @@ public partial class Features : ContentPage
                 $"Brand: {featureWrapper.GetBrand()}\n" +
                 $"Model: {featureWrapper.GetModel()}\n" +
                 $"Year Made: {featureWrapper.GetYearMade()}\n" +
-                $"Feature Price: {featureWrapper.GetPrice()}\n" +
-                $"Feature Tax: {featureWrapper.GetTax()}\n"
+                $"Feature Price: {featureWrapper.GetPrice()}\n"
+                //$"Feature Tax: {featureWrapper.GetTax()}\n"
                 , "OK");
         }
     }
