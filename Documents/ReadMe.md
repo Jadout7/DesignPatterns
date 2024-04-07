@@ -5,6 +5,19 @@ ___
 This project is a car showroom application designed to facilitate the purchase of cars with optional features. Users can add cars to their order, each of which may include a maximum of one feature. Additionally, users can proceed to the shopping cart without selecting a feature if desired. The application provides a simple interface for viewing the order, accessing the shopping cart, and making payments.
 ___
 
+## Instructions
+
+### Installation of MAUI Community Toolkit
+If MAUI Community Toolkit is not installed, follow the steps below:
+
+- Open Solution Explorer
+- Right-Click on the Project (CarShowroom)
+- Click on `Manage NuGet Packages...`
+- Click on the `Browse` button
+- Search for `CommunityToolkit.Mvvm`
+- Install the extension and restart your application
+___
+
 ## Design Pattern Implementation
 
 ### 1. Factory Method Pattern:
