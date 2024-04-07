@@ -29,17 +29,6 @@ public abstract class Car
         return 0;
     }
 
-    public void AddFeature(FeatureWrapper feature)
-    {
-        featureWrappers.Add(feature);
-        feature.Car = this;
-    }
-
-    public void RemoveFeature(FeatureWrapper feature)
-    {
-        featureWrappers.Remove(feature);
-    }
-
     public float GetPriceWithTax()
     {
         return Price + CalculateTax();

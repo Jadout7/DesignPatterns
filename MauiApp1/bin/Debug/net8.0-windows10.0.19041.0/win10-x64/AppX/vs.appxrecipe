@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-04-06T22:58:48.923</Modified>
+      <Modified>2024-04-07T17:22:30.848</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-04-06T22:58:48.859</Modified>
+      <Modified>2024-04-07T17:22:30.796</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CarShowroom.runtimeconfig.json">
       <PackagePath>CarShowroom.runtimeconfig.json</PackagePath>
-      <Modified>2024-04-06T21:43:27.245</Modified>
+      <Modified>2024-04-07T17:12:08.337</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CarShowroom.dll">
       <PackagePath>CarShowroom.dll</PackagePath>
-      <Modified>2024-04-06T22:58:48.686</Modified>
+      <Modified>2024-04-07T17:22:30.643</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>CarShowroom.exe</PackagePath>
-      <Modified>2024-04-06T22:58:48.690</Modified>
+      <Modified>2024-04-07T17:22:30.646</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -319,7 +319,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\OneDrive\Documentos\GitHub\DesignPatterns\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CarShowroom.deps.json">
       <PackagePath>CarShowroom.deps.json</PackagePath>
-      <Modified>2024-04-06T22:36:22.206</Modified>
+      <Modified>2024-04-07T17:12:08.267</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
