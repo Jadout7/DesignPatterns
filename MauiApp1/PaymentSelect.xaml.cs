@@ -119,10 +119,11 @@ public partial class PaymentSelect : ContentPage
         }
     }
 
-    public void PaymentRedirect()
+    public async void PaymentRedirect()
     {
+        float finalPrice = Order.Instance.GetTotalPrice();
         Order.Instance.Pay();
-        Application.Current.MainPage.DisplayAlert("Payment Success", "Your payment has been processed successfully.", "OK");
+        await DisplayAlert("Payment Success", "Your payment has been processed successfully. Total order cost: " + finalPrice.ToString("C"), "OK");
         Application.Current.MainPage = new Showroom();
     }
 

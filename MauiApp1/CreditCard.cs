@@ -31,7 +31,6 @@ public class CreditCard : IPayable
 
     public bool IsValidExpirationDate()
     {
-        DateTime today = DateTime.Now;
         return ExpirationDate > DateTime.Today;
     }
 

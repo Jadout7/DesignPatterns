@@ -18,9 +18,17 @@
         </StackLayout>
         <Picker Title="Select a Bank" x:Name="IdealBank" IsVisible="False">
             <Picker.Items>
-                <x:String>ABN</x:String>
-                <x:String>Revolut</x:String>
-                <x:String>ING</x:String>
+                <x:String>ABN AMRO</x:String>
+                <x:String>ASN Bank</x:String>
+                <x:String>bunq</x:String>
+                <x:String>Friesland Bank</x:String>
+                <x:String>ING Bank</x:String>
+                <x:String>Knab</x:String>
+                <x:String>Rabobank</x:String>
+                <x:String>RegioBank</x:String>
+                <x:String>SNS Bank</x:String>
+                <x:String>Triodos Bank</x:String>
+                <x:String>Van Lanschot</x:String>
             </Picker.Items>
         </Picker>
         <Entry Placeholder="IBAN" IsVisible="False" x:Name="Iban"/>
