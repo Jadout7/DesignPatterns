@@ -6,10 +6,6 @@
              x:Class="MauiApp1.Features"
              Title="Features">
 
-    <ContentPage.BindingContext>
-        <vm:FeaturesViewModel/>
-    </ContentPage.BindingContext>
-
     <ScrollView>
         <VerticalStackLayout BackgroundColor="Beige">
         

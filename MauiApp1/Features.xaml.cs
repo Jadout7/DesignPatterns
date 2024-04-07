@@ -9,11 +9,7 @@ public partial class Features : ContentPage
 
     private void OnViewClicked(object sender, EventArgs e)
     {
-        var featureWrapper = (sender as Button)?.BindingContext as FeatureWrapper;
-        if (featureWrapper != null)
-        {
-            DisplayAlert("Feature Details", $"Title: {featureWrapper.Title}\nTotal Price: {featureWrapper.TotalPrice:C}", "OK");
-        }
+
     }
 
     void OnAddClicked(object sender, EventArgs e)
