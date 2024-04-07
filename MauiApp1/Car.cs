@@ -1,55 +1,48 @@
-﻿using System;
-
-public abstract class Car
+﻿public abstract class Car : ICar
 {
-    public long Vin { get; set; }
+    public long Vin;
+    public string Brand;
+    public string Model;
+    public int YearMade;
+    public float Price;
+    public float Tax;
+    public string ImageSource;
 
-    public string Brand { get; set; }
-
-    public string Model { get; set; }
-
-    public int YearMade { get; set; }
-
-    public float Price {  get; set; }
-    private List<FeatureWrapper> featureWrappers;
-
-    public Car(long vin, string brand, string model, int yearMade, float price)
+    public virtual long GetVin()
     {
-        this.Vin = vin;
-        this.Brand = brand;
-        this.Model = model;
-        this.YearMade = yearMade;
-        this.Price = price;
-        this.featureWrappers = new List<FeatureWrapper>();
+        return Vin;
     }
 
-    public float CalculateTax()
+    public virtual string GetBrand()
     {
-        // Calculation logic for tax
-        return 0;
+        return Brand;
     }
 
-    public void AddFeature(FeatureWrapper feature)
+    public virtual string GetModel()
     {
-        featureWrappers.Add(feature);
-        feature.Car = this;
+        return Model;
     }
 
-    public void RemoveFeature(FeatureWrapper feature)
+    public virtual int GetYearMade()
     {
-        featureWrappers.Remove(feature);
+        return YearMade;
     }
 
-    public float GetPriceWithTax()
+    public virtual float GetPrice()
     {
-        return Price + CalculateTax();
+        return Price;
     }
 
-    public string ImageSource
+    public virtual float GetTax()
     {
-        get {
-            string sanitizedModel = Model.Replace(" ", "_").ToLower();
-            return $"../{sanitizedModel.Replace("-", "_")}.jpg";
-        }
+        return Tax;
     }
+
+    public virtual string GetImageSource()
+    {
+        string sanitizedModel = Model.Replace(" ", "_").ToLower();
+        return $"../{sanitizedModel.Replace("-", "_")}.jpg";
+    }
+
+    public abstract float GetTotalPrice();
 }

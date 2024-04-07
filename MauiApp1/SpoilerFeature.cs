@@ -1,17 +1,26 @@
-﻿using System;
-
-public class SpoilerFeature : FeatureWrapper
+﻿public class SpoilerWrapper : FeatureWrapper
 {
-    public SpoilerFeature()
+    private float SpoilerFeaturePrice { get; set; }
+    private float SpoilerFeatureTax { get; set; }
+
+    public SpoilerWrapper(ICar wrappedCar, float spoilerFeaturePrice, float spoilerFeatureTax) : base(wrappedCar)
     {
-        Title = "Spoiler";
-        ImageSource = "../spoiler.png";
-        Price = 500;
-        TaxAmount = 50;
+        SpoilerFeaturePrice = spoilerFeaturePrice;
+        SpoilerFeatureTax = spoilerFeatureTax;
     }
 
-    public void IncreaseSpeed()
+    public override float GetPrice()
     {
-        // TODO: Implement speed logic
+        return SpoilerFeaturePrice;
+    }
+
+    public override float GetTax()
+    {
+        return SpoilerFeatureTax;
+    }
+
+    public override float GetTotalPrice()
+    {
+        return base.GetPrice() + GetPrice() + base.GetTax() + GetTax();
     }
 }

@@ -1,20 +1,56 @@
-﻿using System;
-
-public class HydrogenCar : Car
+﻿public class HydrogenCar : Car
 {
-    private double _hydrogenTankPercentage;
-    public double HydrogenTankPercentage { get; set; }
-    public HydrogenCar(long vin, string brand, string model, int yearMade, float price) : base(vin, brand, model, yearMade, price)
+    private long Vin;
+    private string Brand;
+    private string Model;
+    private int YearMade;
+    private float Price;
+    private float Tax;
+    public int TankPressure { get; set; }
+
+    public HydrogenCar(long vin, string brand, string model, int yearMade, float price, float tax, int tankPressure)
     {
-        HydrogenTankPercentage = 100.0;
-        _hydrogenTankPercentage = HydrogenTankPercentage;
+        Vin = vin;
+        Brand = brand;
+        Model = model;
+        YearMade = yearMade;
+        Price = price;
+        Tax = tax;
+        TankPressure = tankPressure;
     }
 
-    //TODO: Add FeatureWrappers
+    public override long GetVin()
+    {
+        return Vin;
+    }
 
-    //public override float CalculateTax()
-    //{
-    //    // Implement tax calculation for hydrogen cars
-    //    return 0;
-    //}
+    public override string GetBrand()
+    {
+        return Brand;
+    }
+
+    public override string GetModel()
+    {
+        return Model;
+    }
+
+    public override int GetYearMade()
+    {
+        return YearMade;
+    }
+
+    public override float GetPrice()
+    {
+        return Price;
+    }
+
+    public override float GetTax()
+    {
+        return Tax;
+    }
+
+    public override float GetTotalPrice()
+    {
+        return Price + Tax;
+    }
 }

@@ -56,6 +56,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Remove="HardTireFeature.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Remove="Resources\Images\bannercar.jpg" />
 	  <None Remove="Resources\Images\electric.jpeg" />
 	  <None Remove="Resources\Images\hydrogen.jpg" />

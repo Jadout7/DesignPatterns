@@ -7,7 +7,7 @@
              Padding="20">
 
     <ContentPage.BindingContext>
-        <vm:ShoppingCartViewModel />
+        <vm:ShowroomViewModel />
     </ContentPage.BindingContext>
     <StackLayout Margin="20" HorizontalOptions="Center" Spacing="20">
         <Label Text="Shopping Cart" FontSize="Title" HorizontalOptions="Center"/>

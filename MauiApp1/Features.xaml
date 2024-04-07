@@ -11,35 +11,49 @@
     </ContentPage.BindingContext>
 
     <ScrollView>
-        <VerticalStackLayout BackgroundColor="Beige">
-        
+        <VerticalStackLayout BackgroundColor="Gray">
+
             <local:HeaderView/>
 
             <Grid>
-                <Label Padding="20,40,20,30" Text="ALL FEATURES" FontSize="45" FontAttributes="Italic" FontFamily="Verdana" HorizontalOptions="StartAndExpand"/>
+                <Label Padding="20,40,20,0" Text="All Features" FontSize="36" FontAttributes="Italic" FontFamily="Verdana" HorizontalOptions="StartAndExpand"/>
             </Grid>
 
             <!-- Feature list -->
-            <StackLayout BindableLayout.ItemsSource="{Binding FeatureWrappers}" Margin="20, 0, 20, 0">
-                <BindableLayout.ItemTemplate>
+            <CollectionView ItemsSource="{Binding FeatureGroups}" Margin="20, 0, 20, 0">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="20" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Frame Margin="0,0,20,0" WidthRequest="250" HeightRequest="250">
-                            <StackLayout>
-                                <Image Margin="25,0,25,0"  Source="{Binding ImageSource}" Aspect="AspectFill" />
-                                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                                    <Button BackgroundColor="Black" FontSize="Medium" CornerRadius="0" Clicked= "OnViewClicked" Text="View" />
-                                    <Button Margin="2, 0, 0, 0" BackgroundColor="Black" FontSize="Medium" CornerRadius="0" Text="Add" Clicked="OnAddClicked"/>
-                                </StackLayout>
-                            </StackLayout>
-                        </Frame>
+                        <StackLayout>
+                            <Label HorizontalOptions="CenterAndExpand" FontAttributes="Bold" Text="{Binding Name}" FontSize="Title" Margin="0,20,0,15" />
+                            <ScrollView Orientation="Horizontal">
+                                <HorizontalStackLayout HorizontalOptions="CenterAndExpand" BindableLayout.ItemsSource="{Binding Features}">
+                                    <BindableLayout.ItemTemplate>
+                                        <DataTemplate>
+                                            <Frame BackgroundColor="White" Margin="0,0,20,0" WidthRequest="250" HeightRequest="250">
+                                                <StackLayout>
+                                                    <Image Margin="25,0,25,0" Source="{Binding ImageSource}" Aspect="AspectFill" />
+                                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                                        <Button BackgroundColor="Black" FontSize="Medium" CornerRadius="0" Clicked= "OnViewClicked" TextColor="White" Text="View" />
+                                                        <Button Margin="2, 0, 0, 0" BackgroundColor="Black" FontSize="Medium" CornerRadius="0" TextColor="White" Text="Add" Clicked="OnAddClicked"/>
+                                                    </StackLayout>
+                                                </StackLayout>
+                                            </Frame>
+                                        </DataTemplate>
+                                    </BindableLayout.ItemTemplate>
+                                </HorizontalStackLayout>
+                            </ScrollView>
+                        </StackLayout>
                     </DataTemplate>
-                </BindableLayout.ItemTemplate>
-            </StackLayout>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
 
             <!-- Continue button -->
             <Button Margin="0,35,12,0" HeightRequest="60" BackgroundColor="Black" FontSize="14" Text="CONTINUE SHOPPING" Clicked="OnContinueClicked" HorizontalOptions="EndAndExpand" VerticalOptions="End" />
-        
+
         </VerticalStackLayout>
     </ScrollView>
-    
+
 </ContentPage>

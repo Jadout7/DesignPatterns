@@ -1,18 +1,57 @@
-﻿using System;
-
-public class PetrolCar : Car
+﻿public class PetrolCar : Car
 {
-    private int _litresTank;
-    public int LitresTank { get; set; }
-    public PetrolCar(long vin, string brand, string model, int yearMade, float price) : base(vin, brand, model, yearMade, price)
+    private long Vin;
+    private string Brand;
+    private string Model;
+    private int YearMade;
+    private float Price;
+    private float Tax;
+    public string FuelType { get; set; }
+
+    public PetrolCar(long vin, string brand, string model, int yearMade, float price, float tax, string fuelType)
     {
-        LitresTank = 50;
-        _litresTank = LitresTank;
+        Vin = vin;
+        Brand = brand;
+        Model = model;
+        YearMade = yearMade;
+        Price = price;
+        Tax = tax;
+        FuelType = fuelType;
     }
 
-    //public override float CalculateTax()
-    //{
-    //    // Implement tax calculation for petrol cars
-    //    return 0;
-    //}
+
+    public override long GetVin()
+    {
+        return Vin;
+    }
+
+    public override string GetBrand()
+    {
+        return Brand;
+    }
+
+    public override string GetModel()
+    {
+        return Model;
+    }
+
+    public override int GetYearMade()
+    {
+        return YearMade;
+    }
+
+    public override float GetPrice()
+    {
+        return Price;
+    }
+
+    public override float GetTax()
+    {
+        return Tax;
+    }
+
+    public override float GetTotalPrice()
+    {
+        return Price + Tax;
+    }
 }
